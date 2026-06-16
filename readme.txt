@@ -64,6 +64,10 @@ No. The storefront output is CSS-only with no JavaScript, so it does not cause l
 
 Yes. Use the `[trust_badges]` shortcode to render the row anywhere shortcodes are supported.
 
+= Which badges are included? =
+
+A curated set of inline SVG icons (secure checkout, shipping, returns and similar). Choose which to show in settings.
+
 == Screenshots ==
 
 1. The trust-badge row beneath the add-to-cart button on a single product page.
