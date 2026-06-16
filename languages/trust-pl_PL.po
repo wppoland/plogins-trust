@@ -4,17 +4,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Trust - Trust Badges for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trust\n"
+"POT-Creation-Date: 2026-06-16T20:23:40+00:00\n"
+"PO-Revision-Date: 2026-06-15 00:00+0000\n"
 "Last-Translator: WPPoland <kontakt@wppoland.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-14T21:47:10+00:00\n"
-"PO-Revision-Date: 2026-06-15 00:00+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: trust\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
 
 #. Plugin Name of the plugin
 #: trust.php
@@ -28,8 +29,12 @@ msgstr "https://plogins.com/trust/"
 
 #. Description of the plugin
 #: trust.php
-msgid "Show trust and secure-checkout badges to boost buyer confidence and conversions."
-msgstr "Wyświetlaj odznaki zaufania i bezpiecznych płatności, aby zwiększyć zaufanie kupujących i konwersję."
+msgid ""
+"Show trust and secure-checkout badges to boost buyer confidence and "
+"conversions."
+msgstr ""
+"Wyświetlaj odznaki zaufania i bezpiecznych płatności, aby zwiększyć zaufanie "
+"kupujących i konwersję."
 
 #. Author of the plugin
 #: trust.php
@@ -45,8 +50,7 @@ msgstr "https://plogins.com/"
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: src/Admin/Settings.php:58
-#: src/Admin/Settings.php:59
+#: src/Admin/Settings.php:58 src/Admin/Settings.php:59
 msgid "Trust Badges"
 msgstr "Odznaki zaufania"
 
@@ -55,62 +59,97 @@ msgid "Reassure shoppers at the moment they decide to buy"
 msgstr "Zapewnij kupujących o bezpieczeństwie w chwili decyzji o zakupie"
 
 #: src/Admin/Settings.php:123
-msgid "Trust shows a row of secure-checkout badges with a short heading after the add-to-cart button. Pick the badges, write the heading and choose the colour."
-msgstr "Trust wyświetla rząd odznak bezpiecznych płatności z krótkim nagłówkiem pod przyciskiem dodawania do koszyka. Wybierz odznaki, wpisz nagłówek i ustaw kolor."
+msgid ""
+"Trust shows a row of secure-checkout badges with a short heading after the "
+"add-to-cart button. Pick the badges, write the heading and choose the colour."
+msgstr ""
+"Trust wyświetla rząd odznak bezpiecznych płatności z krótkim nagłówkiem pod "
+"przyciskiem dodawania do koszyka. Wybierz odznaki, wpisz nagłówek i ustaw "
+"kolor."
 
 #: src/Admin/Settings.php:131
-msgid "General"
-msgstr "Ogólne"
+msgid "Display"
+msgstr ""
 
-#: src/Admin/Settings.php:135
+#: src/Admin/Settings.php:132
+msgid ""
+"Trust works out of the box: leaving everything at its defaults shows four "
+"secure-checkout badges under the add-to-cart button. Adjust below only if "
+"you want to change what appears or where."
+msgstr ""
+
+#: src/Admin/Settings.php:136
 msgid "Enable trust badges"
 msgstr "Włącz odznaki zaufania"
 
-#: src/Admin/Settings.php:139
+#: src/Admin/Settings.php:140
 msgid "Show the trust-badge row on the storefront."
 msgstr "Wyświetlaj rząd odznak zaufania w sklepie."
 
-#: src/Admin/Settings.php:141
-msgid "When off, no badges and no stylesheet load anywhere — the storefront is completely unaffected."
-msgstr "Po wyłączeniu nigdzie nie wczytują się żadne odznaki ani arkusz stylów — sklep pozostaje całkowicie nienaruszony."
+#: src/Admin/Settings.php:142
+msgid ""
+"When off, no badges and no stylesheet load anywhere — the storefront is "
+"completely unaffected."
+msgstr ""
+"Po wyłączeniu nigdzie nie wczytują się żadne odznaki ani arkusz stylów — "
+"sklep pozostaje całkowicie nienaruszony."
 
-#: src/Admin/Settings.php:145
+#: src/Admin/Settings.php:146
 msgid "Show on product pages"
 msgstr "Wyświetlaj na stronach produktów"
 
-#: src/Admin/Settings.php:149
-msgid "Show the badge row after the add-to-cart button on single product pages."
-msgstr "Wyświetlaj rząd odznak pod przyciskiem dodawania do koszyka na stronach pojedynczych produktów."
+#: src/Admin/Settings.php:150
+msgid ""
+"Show the badge row after the add-to-cart button on single product pages."
+msgstr ""
+"Wyświetlaj rząd odznak pod przyciskiem dodawania do koszyka na stronach "
+"pojedynczych produktów."
 
-#: src/Admin/Settings.php:151
-msgid "You can also place the row anywhere with the [trust_badges] shortcode."
-msgstr "Możesz też umieścić ten rząd w dowolnym miejscu za pomocą shortcode'u [trust_badges]."
+#: src/Admin/Settings.php:152
+msgid ""
+"Turn this off to keep the badges out of the product template and place them "
+"yourself with the [trust_badges] shortcode — for example inside a footer or "
+"a block."
+msgstr ""
 
-#: src/Admin/Settings.php:156
+#: src/Admin/Settings.php:157
 msgid "Heading"
 msgstr "Nagłówek"
 
-#: src/Admin/Settings.php:160
-msgid "Short reassurance shown above the badges, e.g. “Guaranteed safe checkout”. Leave empty to show only the icons."
-msgstr "Krótkie zapewnienie wyświetlane nad odznakami, np. „Gwarancja bezpiecznych płatności”. Pozostaw puste, aby wyświetlać tylko ikony."
+#: src/Admin/Settings.php:161
+msgid ""
+"Short reassurance shown above the badges. Keep it under a line so it reads "
+"at a glance; leave it empty to show the icons on their own."
+msgstr ""
 
-#: src/Admin/Settings.php:165
+#: src/Admin/Settings.php:172
+msgid "Guaranteed safe checkout"
+msgstr ""
+
+#: src/Admin/Settings.php:180
 msgid "Icon colour"
 msgstr "Kolor ikon"
 
-#: src/Admin/Settings.php:169
-msgid "Colour for the bundled SVG icons and heading."
-msgstr "Kolor dołączonych ikon SVG i nagłówka."
+#: src/Admin/Settings.php:184
+msgid ""
+"Tints the icons and heading. Pick a shade that stays readable against your "
+"product page background — a dark slate or your brand colour usually works "
+"best."
+msgstr ""
 
-#: src/Admin/Settings.php:177
+#: src/Admin/Settings.php:192
 msgid "Badges"
 msgstr "Odznaki"
 
-#: src/Admin/Settings.php:178
-msgid "Choose which bundled badges to show. They are safe inline graphics — no external requests and no third-party logos."
-msgstr "Wybierz, które dołączone odznaki wyświetlać. Są to bezpieczne grafiki osadzone bezpośrednio — bez żądań zewnętrznych i bez logo firm trzecich."
+#: src/Admin/Settings.php:193
+msgid ""
+"Choose which bundled badges to show. They are safe inline graphics — no "
+"external requests and no third-party logos."
+msgstr ""
+"Wybierz, które dołączone odznaki wyświetlać. Są to bezpieczne grafiki "
+"osadzone bezpośrednio — bez żądań zewnętrznych i bez logo firm trzecich."
 
-#: src/Admin/Settings.php:181
+#: src/Admin/Settings.php:196
 msgid "Bundled badges"
 msgstr "Dołączone odznaki"
 
@@ -157,3 +196,22 @@ msgstr "Satysfakcja (kciuk w górę)"
 #: trust.php:47
 msgid "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
 msgstr "Trust - Odznaki zaufania dla WooCommerce wymaga aktywnego WooCommerce."
+
+#~ msgid "General"
+#~ msgstr "Ogólne"
+
+#~ msgid ""
+#~ "You can also place the row anywhere with the [trust_badges] shortcode."
+#~ msgstr ""
+#~ "Możesz też umieścić ten rząd w dowolnym miejscu za pomocą shortcode'u "
+#~ "[trust_badges]."
+
+#~ msgid ""
+#~ "Short reassurance shown above the badges, e.g. “Guaranteed safe "
+#~ "checkout”. Leave empty to show only the icons."
+#~ msgstr ""
+#~ "Krótkie zapewnienie wyświetlane nad odznakami, np. „Gwarancja "
+#~ "bezpiecznych płatności”. Pozostaw puste, aby wyświetlać tylko ikony."
+
+#~ msgid "Colour for the bundled SVG icons and heading."
+#~ msgstr "Kolor dołączonych ikon SVG i nagłówka."
