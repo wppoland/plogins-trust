@@ -1,5 +1,5 @@
 === Trust - Trust Badges for WooCommerce ===
-Contributors: wppoland
+Contributors: motylanogha
 Tags: woocommerce, trust badges, secure checkout, conversion, ecommerce
 Requires at least: 6.5
 Tested up to: 7.0
