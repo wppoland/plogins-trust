@@ -184,6 +184,34 @@ final class Settings implements HasHooks
                                     <p class="description"><?php esc_html_e('Tints the icons and heading. Pick a shade that stays readable against your product page background — a dark slate or your brand colour usually works best.', 'trust'); ?></p>
                                 </td>
                             </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="trust_schedule_start"><?php esc_html_e('Schedule start', 'trust'); ?></label>
+                                </th>
+                                <td>
+                                    <input type="datetime-local" id="trust_schedule_start" name="<?php echo esc_attr(self::OPTION); ?>[schedule_start]" value="<?php echo esc_attr((string) ($settings['schedule_start'] ?? '')); ?>" <?php disabled(! class_exists(\Trust\Pro\ProPlugin::class)); ?> />
+                                    <p class="description">
+                                        <?php esc_html_e('Optional date and time when the badges should start showing (in store timezone).', 'trust'); ?>
+                                        <?php if (! class_exists(\Trust\Pro\ProPlugin::class)) : ?>
+                                            <span style="color:#d63638;font-weight:600;"><?php esc_html_e('Requires Trust Pro.', 'trust'); ?></span>
+                                        <?php endif; ?>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="trust_schedule_end"><?php esc_html_e('Schedule end', 'trust'); ?></label>
+                                </th>
+                                <td>
+                                    <input type="datetime-local" id="trust_schedule_end" name="<?php echo esc_attr(self::OPTION); ?>[schedule_end]" value="<?php echo esc_attr((string) ($settings['schedule_end'] ?? '')); ?>" <?php disabled(! class_exists(\Trust\Pro\ProPlugin::class)); ?> />
+                                    <p class="description">
+                                        <?php esc_html_e('Optional date and time when the badges should stop showing (in store timezone).', 'trust'); ?>
+                                        <?php if (! class_exists(\Trust\Pro\ProPlugin::class)) : ?>
+                                            <span style="color:#d63638;font-weight:600;"><?php esc_html_e('Requires Trust Pro.', 'trust'); ?></span>
+                                        <?php endif; ?>
+                                    </p>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -274,12 +302,17 @@ final class Settings implements HasHooks
             $color = (string) ($defaults['icon_color'] ?? '#3c4858');
         }
 
+        $schedule_start = isset($raw['schedule_start']) ? sanitize_text_field((string) $raw['schedule_start']) : '';
+        $schedule_end   = isset($raw['schedule_end']) ? sanitize_text_field((string) $raw['schedule_end']) : '';
+
         $sanitized = array_merge($defaults, [
             'enabled'         => ! empty($raw['enabled']),
             'heading'         => $heading,
             'badges'          => $badges,
             'show_on_product' => ! empty($raw['show_on_product']),
             'icon_color'      => $color,
+            'schedule_start'  => $schedule_start,
+            'schedule_end'    => $schedule_end,
         ]);
 
         return (array) apply_filters('trust_sanitize_settings', $sanitized, $raw);

@@ -33,4 +33,8 @@ return [
 
     // Colour applied to the bundled SVG icons and heading.
     'icon_color' => '#3c4858',
+
+    // Seasonal/campaign display schedules (PRO).
+    'schedule_start' => '',
+    'schedule_end'   => '',
 ];

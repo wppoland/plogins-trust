@@ -4,7 +4,7 @@ Tags: woocommerce, trust badges, secure checkout, conversion, ecommerce
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -87,6 +87,9 @@ A curated set of inline SVG icons (secure checkout, shipping, returns and simila
 Trust does not connect to any external services. Every badge is a bundled inline SVG served from your own site, so the storefront output loads nothing from third parties and the plugin makes no network requests. Your choices (the heading, selected badges and icon colour) are kept on your own site in a single `trust_settings` option, alongside a `trust_db_version` marker; both are removed when you delete the plugin. The plugin sends no email and stores no visitor or customer data.
 
 == Changelog ==
+
+= 0.1.1 =
+* Adds support for seasonal and campaign display scheduling start/end dates (requires Trust Pro).
 
 = 0.1.0 =
 * Initial release: bundled inline SVG trust badges shown after the add-to-cart button on single product pages, with a configurable heading, badge selection, icon colour and a `[trust_badges]` shortcode.

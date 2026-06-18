@@ -141,7 +141,8 @@ final class BadgesService implements HasHooks
             ];
         }
 
-        return $items;
+        /** @var list<array<string, string>> $items */
+        return apply_filters('trust/badges', $items, $settings);
     }
 
     /**
