@@ -37,8 +37,13 @@ final class BadgesService implements HasHooks
         add_shortcode(self::SHORTCODE, [$this, 'renderShortcode']);
 
         if (! empty($settings['show_on_product'])) {
-            add_action('woocommerce_after_add_to_cart_form', [$this, 'renderRow']);
+            add_action('woocommerce_after_add_to_cart_form', [$this, 'renderProductRow']);
         }
+    }
+
+    public function renderProductRow(): void
+    {
+        $this->renderRow('product');
     }
 
     /**
@@ -75,7 +80,7 @@ final class BadgesService implements HasHooks
         wp_enqueue_style('trust-badges', \TRUST_URL . 'assets/css/badges.css', [], \Trust\VERSION);
 
         ob_start();
-        $this->renderRow();
+        $this->renderRow('shortcode');
 
         return (string) ob_get_clean();
     }
@@ -84,7 +89,7 @@ final class BadgesService implements HasHooks
      * Print the badge row. Safe to call from any storefront hook; renders
      * nothing when there is nothing valid to show.
      */
-    public function renderRow(): void
+    public function renderRow(string $placement = 'product'): void
     {
         $settings = $this->settings();
 
@@ -106,11 +111,21 @@ final class BadgesService implements HasHooks
         }
 
         $context = [
-            'heading' => (string) ($settings['heading'] ?? ''),
-            'items'   => $items,
+            'heading'   => (string) ($settings['heading'] ?? ''),
+            'items'     => $items,
+            'placement' => $placement,
         ];
 
         $this->renderTemplate('badges', $context);
+
+        /**
+         * Fires after trust badges are rendered on the storefront.
+         *
+         * @param list<array<string, string>> $items     Renderable badge rows.
+         * @param array<string, mixed>        $settings Trust settings.
+         * @param string                        $placement `product` or `shortcode`.
+         */
+        do_action('trust/badges_rendered', $items, $settings, $placement);
     }
 
     /**

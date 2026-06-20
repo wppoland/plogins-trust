@@ -23,7 +23,7 @@ if (empty($items) || ! is_array($items)) {
     return;
 }
 ?>
-<div class="trust-badges">
+<div class="trust-badges" data-trust-placement="<?php echo esc_attr((string) ($placement ?? 'shortcode')); ?>">
     <?php if (is_string($heading) && $heading !== '') : ?>
         <p class="trust-badges__heading"><?php echo esc_html($heading); ?></p>
     <?php endif; ?>
@@ -31,7 +31,7 @@ if (empty($items) || ! is_array($items)) {
     <ul class="trust-badges__list" role="list">
         <?php foreach ($items as $item) : ?>
             <?php $label = (string) ($item['label'] ?? ''); ?>
-            <li class="trust-badge trust-badge--svg">
+            <li class="trust-badge trust-badge--svg" data-trust-badge="<?php echo esc_attr((string) ($item['slug'] ?? '')); ?>">
                 <?php if (! empty($item['svg'])) : ?>
                     <span class="trust-badge__icon" role="img" aria-label="<?php echo esc_attr($label); ?>">
                         <?php
