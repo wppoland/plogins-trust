@@ -37,7 +37,7 @@ Trust is not yet on the WordPress.org directory. The source lives on GitHub at h
 
 = Where badges appear =
 
-* Single product page — after the add-to-cart button.
+* Single product page, after the add-to-cart button.
 * Anywhere via the `[trust_badges]` shortcode.
 
 = Settings =
