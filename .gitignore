@@ -6,3 +6,5 @@
 # composer.lock IS committed — pins dev tooling versions for reproducible CI.
 _imgseed.php
 _seed.php
+*~
+*.bak
