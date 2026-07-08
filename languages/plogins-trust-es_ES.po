@@ -5,26 +5,26 @@ msgstr ""
 "Project-Id-Version: Trust - Trust Badges for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trust\n"
 "POT-Creation-Date: 2026-06-16T20:23:40+00:00\n"
-"PO-Revision-Date: 2026-06-15 00:00+0000\n"
-"Last-Translator: WPPoland <kontakt@wppoland.com>\n"
-"Language-Team: Polish <pl@li.org>\n"
-"Language: pl_PL\n"
+"PO-Revision-Date: 2026-06-16T20:23:40+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Domain: plogins-trust\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: plogins-trust.php
 msgid "Trust - Trust Badges for WooCommerce"
-msgstr "Trust - Odznaki zaufania dla WooCommerce"
+msgstr "Confianza - Insignias de confianza para WooCommerce"
 
 #. Plugin URI of the plugin
 #: plogins-trust.php
 msgid "https://plogins.com/trust/"
-msgstr "https://plogins.com/trust/"
+msgstr "https://plogins.com/es/trust/"
 
 #. Description of the plugin
 #: plogins-trust.php
@@ -32,8 +32,8 @@ msgid ""
 "Show trust and secure-checkout badges to boost buyer confidence and "
 "conversions."
 msgstr ""
-"Wyświetlaj odznaki zaufania i bezpiecznych płatności, aby zwiększyć zaufanie"
-" kupujących i konwersję."
+"Muestre insignias de confianza y de pago seguro para aumentar la confianza "
+"del comprador y las conversiones."
 
 #. Author of the plugin
 #: plogins-trust.php
@@ -47,15 +47,15 @@ msgstr "https://plogins.com/"
 
 #: src/Admin/Settings.php:46
 msgid "Settings"
-msgstr "Ustawienia"
+msgstr "Ajustes"
 
 #: src/Admin/Settings.php:58 src/Admin/Settings.php:59
 msgid "Trust Badges"
-msgstr "Odznaki zaufania"
+msgstr "Insignias de confianza"
 
 #: src/Admin/Settings.php:122
 msgid "Reassure shoppers at the moment they decide to buy"
-msgstr "Zapewnij kupujących o bezpieczeństwie w chwili decyzji o zakupie"
+msgstr "Tranquilizar a los compradores en el momento en que deciden comprar"
 
 #: src/Admin/Settings.php:123
 msgid ""
@@ -63,13 +63,13 @@ msgid ""
 "add-to-cart button. Pick the badges, write the heading and choose the "
 "colour."
 msgstr ""
-"Trust wyświetla rząd odznak bezpiecznych płatności z krótkim nagłówkiem pod "
-"przyciskiem dodawania do koszyka. Wybierz odznaki, wpisz nagłówek i ustaw "
-"kolor."
+"Trust muestra una fila de insignias de pago seguro con un encabezado corto "
+"después del botón Añadir al carrito. Elige las insignias, escribe el título "
+"y elige el color."
 
 #: src/Admin/Settings.php:131
 msgid "Display"
-msgstr "Wyświetlanie"
+msgstr "Mostrar"
 
 #: src/Admin/Settings.php:132
 msgid ""
@@ -77,37 +77,37 @@ msgid ""
 "secure-checkout badges under the add-to-cart button. Adjust below only if "
 "you want to change what appears or where."
 msgstr ""
-"Trust działa od razu: pozostawienie wszystkiego w "
-"ustawieniach domyślnych powoduje wyświetlenie czterech plakietek bezpiecznej"
-" płatności pod przyciskiem Dodaj do koszyka. Dostosuj poniżej tylko wtedy, "
-"gdy chcesz zmienić to, co i gdzie się pojawia."
+"La confianza funciona desde el primer momento: dejar todo en sus valores "
+"predeterminados muestra cuatro insignias de pago seguro debajo del botón "
+"Añadir al carrito. Ajuste a continuación solo si desea cambiar lo que "
+"aparece o dónde."
 
 #: src/Admin/Settings.php:136
 msgid "Enable trust badges"
-msgstr "Włącz odznaki zaufania"
+msgstr "Habilitar insignias de confianza"
 
 #: src/Admin/Settings.php:140
 msgid "Show the trust-badge row on the storefront."
-msgstr "Wyświetlaj rząd odznak zaufania w sklepie."
+msgstr "Muestre la fila del distintivo de confianza en el escaparate."
 
 #: src/Admin/Settings.php:142
 msgid ""
 "When off, no badges and no stylesheet load anywhere, the storefront is "
 "completely unaffected."
 msgstr ""
-"Po wyłączeniu nigdzie nie wczytują się żadne odznaki ani arkusz stylów, "
-"sklep pozostaje całkowicie nienaruszony."
+"Cuando está desactivado, no se cargan insignias ni hojas de estilo en "
+"ninguna parte, el escaparate no se ve afectado en absoluto."
 
 #: src/Admin/Settings.php:146
 msgid "Show on product pages"
-msgstr "Wyświetlaj na stronach produktów"
+msgstr "Mostrar en las páginas de productos"
 
 #: src/Admin/Settings.php:150
 msgid ""
 "Show the badge row after the add-to-cart button on single product pages."
 msgstr ""
-"Wyświetlaj rząd odznak pod przyciskiem dodawania do koszyka na stronach "
-"pojedynczych produktów."
+"Muestre la fila de la insignia después del botón Añadir al carrito en "
+"páginas de productos individuales."
 
 #: src/Admin/Settings.php:152
 msgid ""
@@ -115,30 +115,30 @@ msgid ""
 "yourself with the [trust_badges] shortcode, for example inside a footer or a"
 " block."
 msgstr ""
-"Wyłącz tę opcję, aby plakietki nie pojawiały się w szablonie produktu i "
-"umieść je samodzielnie z krótkim kodem [trust_badges], na przykład w stopce "
-"lub bloku."
+"Desactive esta opción para mantener las insignias fuera de la plantilla del "
+"producto y colóquelas tú mismo con el código corto [trust_badges], por "
+"ejemplo, dentro de un pie de página o un bloque."
 
 #: src/Admin/Settings.php:157
 msgid "Heading"
-msgstr "Nagłówek"
+msgstr "Título"
 
 #: src/Admin/Settings.php:161
 msgid ""
 "Short reassurance shown above the badges. Keep it under a line so it reads "
 "at a glance; leave it empty to show the icons on their own."
 msgstr ""
-"Krótkie zapewnienie pokazane nad plakietkami. Trzymaj go pod linią, aby "
-"można było go przeczytać na pierwszy rzut oka; pozostaw to pole puste, aby "
-"wyświetlić ikony samodzielnie."
+"Breve tranquilidad que se muestra encima de las insignias. Manténgalo debajo"
+" de una línea para que se lea de un vistazo; déjelo vacío para mostrar los "
+"íconos solos."
 
 #: src/Admin/Settings.php:172
 msgid "Guaranteed safe checkout"
-msgstr "Gwarancja bezpiecznej kasy"
+msgstr "Pago seguro garantizado"
 
 #: src/Admin/Settings.php:180
 msgid "Icon colour"
-msgstr "Kolor ikon"
+msgstr "Color del icono"
 
 #: src/Admin/Settings.php:184
 msgid ""
@@ -146,86 +146,69 @@ msgid ""
 "product page background, a dark slate or your brand colour usually works "
 "best."
 msgstr ""
-"Przyciemnia ikony i nagłówek. Wybierz odcień, który będzie czytelny na tle "
-"strony produktu, ciemny grafit lub kolor Twojej marki zazwyczaj sprawdzają "
-"się najlepiej."
+"Tiñe los iconos y el título. Elija un tono que se mantenga legible en el "
+"fondo de la página de su producto; una pizarra oscura o el color de su marca"
+" generalmente funcionan mejor."
 
 #: src/Admin/Settings.php:192
 msgid "Badges"
-msgstr "Odznaki"
+msgstr "Insignias"
 
 #: src/Admin/Settings.php:193
 msgid ""
 "Choose which bundled badges to show. They are safe inline graphics, no "
 "external requests and no third-party logos."
 msgstr ""
-"Wybierz, które dołączone odznaki wyświetlać. Są to bezpieczne grafiki "
-"osadzone bezpośrednio, bez żądań zewnętrznych i bez logo firm trzecich."
+"Elija qué insignias incluidas mostrar. Son gráficos en línea seguros, sin "
+"solicitudes externas ni logotipos de terceros."
 
 #: src/Admin/Settings.php:196
 msgid "Bundled badges"
-msgstr "Dołączone odznaki"
+msgstr "Insignias empaquetadas"
 
 #: src/Badges/BadgeLibrary.php:43
 msgid "Secure checkout (lock)"
-msgstr "Bezpieczne płatności (kłódka)"
+msgstr "Pago seguro (candado)"
 
 #: src/Badges/BadgeLibrary.php:47
 msgid "SSL encrypted"
-msgstr "Szyfrowanie SSL"
+msgstr "SSL cifrado"
 
 #: src/Badges/BadgeLibrary.php:51
 msgid "Money-back guarantee"
-msgstr "Gwarancja zwrotu pieniędzy"
+msgstr "Garantía de devolución de dinero"
 
 #: src/Badges/BadgeLibrary.php:55
 msgid "Verified / trusted store"
-msgstr "Zweryfikowany / zaufany sklep"
+msgstr "Tienda verificada/de confianza"
 
 #: src/Badges/BadgeLibrary.php:59
 msgid "Free shipping (truck)"
-msgstr "Darmowa dostawa (ciężarówka)"
+msgstr "Envío gratuito (camión)"
 
 #: src/Badges/BadgeLibrary.php:63
 msgid "Card payment"
-msgstr "Płatność kartą"
+msgstr "Pago con tarjeta"
 
 #: src/Badges/BadgeLibrary.php:67
 msgid "Digital wallet"
-msgstr "Portfel cyfrowy"
+msgstr "billetera digital"
 
 #: src/Badges/BadgeLibrary.php:71
 msgid "24/7 support (headset)"
-msgstr "Wsparcie 24/7 (słuchawki)"
+msgstr "Soporte 24 horas al día, 7 días a la semana (auriculares)"
 
 #: src/Badges/BadgeLibrary.php:75
 msgid "Privacy protected"
-msgstr "Ochrona prywatności"
+msgstr "Privacidad protegida"
 
 #: src/Badges/BadgeLibrary.php:79
 msgid "Satisfaction (thumbs up)"
-msgstr "Satysfakcja (kciuk w górę)"
+msgstr "Satisfacción (pulgar arriba)"
 
 #: plogins-trust.php:47
 msgid ""
 "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
 msgstr ""
-"Trust - Odznaki zaufania dla WooCommerce wymaga aktywnego WooCommerce."
-
-#~ msgid "General"
-#~ msgstr "Ogólne"
-
-#~ msgid "You can also place the row anywhere with the [trust_badges] shortcode."
-#~ msgstr ""
-#~ "Możesz też umieścić ten rząd w dowolnym miejscu za pomocą shortcode'u "
-#~ "[trust_badges]."
-
-#~ msgid ""
-#~ "Short reassurance shown above the badges, e.g. “Guaranteed safe checkout”. "
-#~ "Leave empty to show only the icons."
-#~ msgstr ""
-#~ "Krótkie zapewnienie wyświetlane nad odznakami, np. „Gwarancja bezpiecznych "
-#~ "płatności”. Pozostaw puste, aby wyświetlać tylko ikony."
-
-#~ msgid "Colour for the bundled SVG icons and heading."
-#~ msgstr "Kolor dołączonych ikon SVG i nagłówka."
+"Confianza: Trust Badges para WooCommerce requiere que WooCommerce esté "
+"activo."
