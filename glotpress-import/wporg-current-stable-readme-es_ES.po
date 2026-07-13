@@ -8,81 +8,84 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: plogins-i18n\n"
 
-msgid "Requires Plugins: woocommerce"
-msgstr "Requiere complementos: woocommerce"
-
 msgid "Add a row of secure-checkout badges after the add-to-cart button to reassure shoppers about payment safety."
 msgstr "Añade una fila de insignias de pago seguro después del botón Añadir al carrito para tranquilizar a los compradores sobre la seguridad del pago."
 
 msgid "Trust shows a row of secure-checkout badges after the add-to-cart button, under a short heading like \"Guaranteed safe checkout\". The idea is simple: put a reminder that the store is safe right where the shopper decides whether to buy."
-msgstr "Trust muestra una fila de insignias de pago seguro después del botón Añadir al carrito, debajo de un título breve como \"Pago seguro garantizado\". La idea es simple: poner un recordatorio de que la tienda es segura justo donde el comprador decide si quiere comprar."
+msgstr "Trust muestra una fila de insignias de pago seguro después del botón Añadir al carrito, debajo de un encabezado breve como «Pago seguro garantizado». La idea es simple: poner un recordatorio de que la tienda es segura justo donde el comprador decide si quiere comprar."
 
 msgid "The plugin includes ten hand-drawn inline SVG badges: secure checkout, SSL encrypted, money-back guarantee, verified store, free shipping, card payment, digital wallet, 24/7 support, privacy protected and satisfaction. You pick which ones to show, write the heading (or leave it blank for icons only) and set the icon colour."
-msgstr "El complemento incluye diez insignias SVG en línea dibujadas a mano: pago seguro, cifrado SSL, garantía de devolución de dinero, tienda verificada, envío gratuito, pago con tarjeta, billetera digital, soporte 24 horas al día, 7 días a la semana, privacidad protegida y satisfacción. Usted elige cuáles mostrar, escribe el encabezado (o lo deja en blanco solo para los íconos) y establece el color del ícono."
+msgstr "El plugin incluye diez insignias SVG en línea dibujadas a mano: pago seguro, cifrado SSL, garantía de devolución de dinero, tienda verificada, envío gratuito, pago con tarjeta, monedero digital, soporte 24/7, privacidad protegida y satisfacción. Tú eliges cuáles mostrar, escribes el encabezado (o lo dejas en blanco para mostrar solo iconos) y estableces el color del icono."
 
 msgid "It is built to stay out of the way:"
-msgstr "Está diseñado para permanecer fuera del camino:"
+msgstr "Está diseñado para no estorbar:"
 
 msgid "* <strong>No external requests.</strong> The badges are inline SVGs served from your own site, so nothing loads from third parties and there is nothing to track.\n* <strong>No JavaScript on the storefront.</strong> The badge row is plain CSS, so it does not add a script or shift the layout as the page loads.\n* <strong>Accessible.</strong> Each badge has an accessible name and the row is marked up as a list. The small hover animation is skipped for visitors who set `prefers-reduced-motion`.\n* <strong>Inherits your colour.</strong> Set one colour and every badge follows it via `currentColor`."
-msgstr "* <strong>Sin solicitudes externas.</strong> Las insignias son SVG en línea servidos desde tu propio sitio, por lo que no se carga nada de terceros y no hay nada que rastrear.\n* <strong>No hay JavaScript en el escaparate.</strong> La fila de la insignia es CSS simple, por lo que no añade un script ni cambia el diseño a medida que se carga la página.\n* <strong>Accesible.</strong> Cada insignia tiene un nombre accesible y la fila está marcada como una lista. La pequeña animación de desplazamiento se omite para los visitantes que configuran \"prefiere movimiento reducido\".\n* <strong>Hereda tu color.</strong> Establece un color y cada insignia lo sigue a través de `currentColor`."
+msgstr "* <strong>Sin solicitudes externas.</strong> Las insignias son SVG en línea servidos desde tu propio sitio, así que no se carga nada de terceros y no hay nada que rastrear.\n* <strong>Sin JavaScript en la tienda.</strong> La fila de insignias es CSS sencillo, así que no añade un script ni desplaza el diseño mientras se carga la página.\n* <strong>Accesible.</strong> Cada insignia tiene un nombre accesible y la fila está marcada como una lista. La pequeña animación al pasar el cursor se omite para los visitantes que tienen activado `prefers-reduced-motion`.\n* <strong>Hereda tu color.</strong> Establece un color y cada insignia lo sigue mediante `currentColor`."
 
 msgid "Trust is not yet on the WordPress.org directory. The source lives on GitHub at https://github.com/wppoland/plogins-trust if you want to read the code or report a bug."
-msgstr "La confianza aún no está en el directorio de WordPress.org. La fuente se encuentra en GitHub en https://github.com/wppoland/plogins-trust si desea leer el código o informar un error."
+msgstr "Trust aún no está en el directorio de WordPress.org. El código fuente está en GitHub en https://github.com/wppoland/plogins-trust por si quieres leerlo o informar de un error."
 
 msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-trust/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-trust/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-trust\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-trust/issues"
-msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-trust/docs/\n* <strong>Página de complementos</strong> - https://plogins.com/es/plogins-trust/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-trust\n* <strong>Informes de errores y solicitudes de funciones</strong> - https://github.com/wppoland/plogins-trust/issues"
+msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-trust/docs/\n* <strong>Página del plugin</strong> - https://plogins.com/es/plogins-trust/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-trust\n* <strong>Informes de errores y peticiones de funciones</strong> - https://github.com/wppoland/plogins-trust/issues"
 
 msgid "* Single product page, after the add-to-cart button.\n* Anywhere via the `[trust_badges]` shortcode."
-msgstr "*Página de producto único, después del botón añadir al carrito.\n* En cualquier lugar a través del código corto `[trust_badges]`."
+msgstr "* Página de producto individual, después del botón Añadir al carrito.\n* En cualquier lugar mediante el shortcode `[trust_badges]`."
 
 msgid "A settings page under the WooCommerce menu lets you:"
-msgstr "Una página de configuración en el menú de WooCommerce le permite:"
+msgstr "Una página de ajustes en el menú de WooCommerce te permite:"
 
 msgid "* Enable or disable the badges.\n* Write the heading (or leave it empty for icons only).\n* Pick which bundled badges to show.\n* Choose the icon colour."
-msgstr "* Activar o desactivar las insignias.\n* Escribe el encabezado (o déjalo vacío solo para los íconos).\n* Elija qué insignias incluidas mostrar.\n* Elige el color del icono."
+msgstr "* Activar o desactivar las insignias.\n* Escribir el encabezado (o dejarlo vacío para mostrar solo iconos).\n* Elegir qué insignias incluidas mostrar.\n* Elegir el color del icono."
 
 msgid "1. Upload the plugin to `/wp-content/plugins/trust`, or install via Plugins → Add New.\n2. Activate it. WooCommerce must be installed and active.\n3. Visit <strong>WooCommerce → Trust Badges</strong> to choose your badges, heading and colour."
-msgstr "1. Cargue el complemento en `/wp-content/plugins/trust`, o instálelo a través de Complementos → Añadir nuevo.\n2. Actívalo. WooCommerce debe estar instalado y activo.\n3. Visita <strong>WooCommerce → Insignias de confianza</strong> para elegir tus insignias, título y color."
+msgstr "1. Sube el plugin a `/wp-content/plugins/trust` o instálalo desde Plugins → Añadir nuevo.\n2. Actívalo. WooCommerce debe estar instalado y activo.\n3. Entra en <strong>WooCommerce → Trust Badges</strong> para elegir tus insignias, encabezado y color."
 
 msgid "Yes. Trust requires an active WooCommerce installation."
 msgstr "Sí. Trust requiere una instalación activa de WooCommerce."
 
 msgid "No. All bundled badges are inline SVGs served from your own site."
-msgstr "No. Todas las insignias incluidas son SVG en línea que se entregan desde tu propio sitio."
+msgstr "No. Todas las insignias incluidas son SVG en línea servidos desde tu propio sitio."
 
 msgid "No. The storefront output is CSS-only with no JavaScript, so it does not cause layout shift."
-msgstr "No. La salida del escaparate es solo CSS sin JavaScript, por lo que no provoca cambios en el diseño."
+msgstr "No. La salida en la tienda es solo CSS, sin JavaScript, así que no provoca saltos de diseño."
 
 msgid "Yes. Use the `[trust_badges]` shortcode to render the row anywhere shortcodes are supported."
-msgstr "Sí. Utilice el código corto `[trust_badges]` para representar la fila en cualquier lugar donde se admitan códigos cortos."
+msgstr "Sí. Usa el shortcode `[trust_badges]` para renderizar la fila en cualquier lugar donde se admitan shortcodes."
 
 msgid "A curated set of inline SVG icons (secure checkout, shipping, returns and similar). Choose which to show in settings."
-msgstr "Un conjunto seleccionado de íconos SVG en línea (pago seguro, envío, devoluciones y similares). Elija cuál mostrar en la configuración."
+msgstr "Un conjunto seleccionado de iconos SVG en línea (pago seguro, envío, devoluciones y similares). Elige cuáles mostrar en los ajustes."
 
 msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
-msgstr "Sí. Este complemento es compatible con WordPress Multisite. Activarlo en red o activarlo en sitios individuales; Cada sitio mantiene su propia configuración y datos."
+msgstr "Sí. Este plugin es compatible con WordPress Multisite. Actívalo en toda la red o en sitios concretos; cada sitio conserva sus propios ajustes y datos."
 
 msgid "1. The trust-badge row beneath the add-to-cart button on a single product page.\n2. The Trust Badges settings screen."
-msgstr "1. La fila de la insignia de confianza debajo del botón Añadir al carrito en la página de un solo producto.\n2. La pantalla de configuración de Trust Badges."
+msgstr "1. La fila de insignias de confianza debajo del botón Añadir al carrito en la página de un producto individual.\n2. La pantalla de ajustes de Trust Badges."
 
 msgid "Trust does not connect to any external services. Every badge is a bundled inline SVG served from your own site, so the storefront output loads nothing from third parties and the plugin makes no network requests. Your choices (the heading, selected badges and icon colour) are kept on your own site in a single `trust_settings` option, alongside a `trust_db_version` marker; both are removed when you delete the plugin. The plugin sends no email and stores no visitor or customer data."
-msgstr "Trust no se conecta a ningún servicio externo. Cada insignia es un SVG en línea incluido que se entrega desde tu propio sitio, por lo que la salida del escaparate no carga nada de terceros y el complemento no realiza solicitudes de red. Sus elecciones (el encabezado, las insignias seleccionadas y el color del icono) se guardan en tu propio sitio en una única opción \"trust_settings\", junto con un marcador \"trust_db_version\"; ambos se eliminan cuando eliminas el complemento. El complemento no envía correos electrónicos y no almacena datos de visitantes o clientes."
+msgstr "Trust no se conecta a ningún servicio externo. Cada insignia es un SVG en línea incluido servido desde tu propio sitio, así que la salida en la tienda no carga nada de terceros y el plugin no realiza solicitudes de red. Tus elecciones (el encabezado, las insignias seleccionadas y el color del icono) se guardan en tu propio sitio en una única opción `trust_settings`, junto con un marcador `trust_db_version`; ambos se eliminan al borrar el plugin. El plugin no envía correos electrónicos y no almacena datos de visitantes ni de clientes."
+
+msgid "Plogins Trust includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-trust`, so WordPress.org language packs can also override or extend these bundled translations."
+msgstr "Plogins Trust incluye traducciones al polaco, alemán y español para la interfaz del plugin. El dominio de texto es `plogins-trust`, así que los paquetes de idioma de WordPress.org también pueden sustituir o ampliar estas traducciones incluidas."
+
+msgid "* Added bundled Polish, German and Spanish translations for the plugin interface."
+msgstr "* Añadidas traducciones al polaco, alemán y español para la interfaz del plugin."
 
 msgid "* First stable release."
 msgstr "* Primera versión estable."
 
 msgid "* Renamed to Plogins Trust for WooCommerce for a more distinctive plugin name."
-msgstr "* Renombrado a Plogins Trust for WooCommerce para obtener un nombre de complemento más distintivo."
+msgstr "* Renombrado a Plogins Trust para WooCommerce para un nombre de plugin más distintivo."
 
 msgid "* Add `trust/badge_library` filter so add-ons can append safe inline SVG badges to the shared picker and renderer."
 msgstr "* Añade el filtro `trust/badge_library` para que los complementos puedan añadir insignias SVG en línea seguras al selector y renderizador compartidos."
 
 msgid "* Add `trust/badges_rendered` action and `data-trust-badge` attributes for privacy-safe add-on analytics."
-msgstr "* Añade la acción `trust/badges_rendered` y los atributos `data-trust-badge` para análisis complementarios seguros para la privacidad."
+msgstr "* Añade la acción `trust/badges_rendered` y los atributos `data-trust-badge` para analítica de complementos respetuosa con la privacidad."
 
 msgid "* Adds support for seasonal and campaign display scheduling start/end dates (requires Trust Pro)."
-msgstr "* Añade soporte para fechas de inicio/finalización de programación de visualización de campañas y temporadas (requiere Trust Pro)."
+msgstr "* Añade compatibilidad con fechas de inicio y fin de programación de visualización estacional y de campaña (requiere Trust Pro)."
 
 msgid "* Initial release: bundled inline SVG trust badges shown after the add-to-cart button on single product pages, with a configurable heading, badge selection, icon colour and a `[trust_badges]` shortcode."
-msgstr "* Lanzamiento inicial: insignias de confianza SVG en línea empaquetadas que se muestran después del botón Añadir al carrito en páginas de productos individuales, con un encabezado configurable, selección de insignia, color de ícono y un código corto `[trust_badges]`."
+msgstr "* Lanzamiento inicial: insignias de confianza SVG en línea incluidas mostradas después del botón Añadir al carrito en páginas de producto individuales, con encabezado configurable, selección de insignias, color de icono y el shortcode `[trust_badges]`."
 
