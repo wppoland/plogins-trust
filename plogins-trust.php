@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Plogins Trust - Trust Badges for WooCommerce
+ * Plugin Name:       Trust - Trust Badges for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-trust/
  * Description:        Show trust and secure-checkout badges to boost buyer confidence and conversions.
  * Version:           1.0.3

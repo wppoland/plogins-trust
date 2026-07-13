@@ -1,4 +1,4 @@
-=== Plogins Trust - Trust Badges for WooCommerce ===
+=== Trust - Trust Badges for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, trust badges, secure checkout, conversion, ecommerce
 Requires at least: 6.5
