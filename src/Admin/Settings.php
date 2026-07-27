@@ -22,12 +22,20 @@ final class Settings implements HasHooks
     private const OPTION = 'trust_settings';
     private const PAGE   = 'trust-settings';
 
+    private ?ProUpsell $proUpsell = null;
+
+    private function proUpsell(): ProUpsell
+    {
+        return $this->proUpsell ??= new ProUpsell();
+    }
+
     public function registerHooks(): void
     {
         add_action('admin_menu', [$this, 'addMenuPage']);
         add_action('admin_init', [$this, 'registerSettings']);
         add_action('admin_enqueue_scripts', [$this, 'enqueueAssets']);
         add_filter('plugin_action_links_' . plugin_basename(\Trust\PLUGIN_FILE), [$this, 'addSettingsLink']);
+        $this->proUpsell()->registerHooks();
     }
 
     /**
@@ -110,6 +118,8 @@ final class Settings implements HasHooks
         ?>
         <div class="wrap trust-admin">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
+
+            <?php $this->proUpsell()->banner(); ?>
 
             <div class="trust-admin__intro">
                 <span class="trust-admin__intro-icon" aria-hidden="true">
@@ -240,6 +250,8 @@ final class Settings implements HasHooks
 
                 <?php submit_button(); ?>
             </form>
+
+            <?php $this->proUpsell()->cards(); ?>
         </div>
         <?php
     }
