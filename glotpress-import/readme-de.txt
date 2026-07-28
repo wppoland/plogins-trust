@@ -13,7 +13,7 @@ Füge nach dem Button „In den Warenkorb“ eine Reihe von Trust-Badges hinzu, 
 
 == Description ==
 
-Trust zeigt nach dem Button „In den Warenkorb“ eine Reihe von Trust-Badges an, unter einer kurzen Überschrift wie „Garantiert sicherer Checkout“. Die Idee ist einfach: Erinnere Käufer daran, dass der Shop sicher ist – genau dort, wo sie sich für den Kauf entscheiden.
+Trust zeigt nach dem Button „In den Warenkorb“ eine Reihe von Trust-Badges an, unter einer kurzen Überschrift wie „Garantiert sicherer Checkout“. Die Idee ist einfach: Erinnere Käufer daran, dass der Shop sicher ist, genau dort, wo sie sich für den Kauf entscheiden.
 
 Das Plugin enthält zehn handgezeichnete Inline-SVG-Badges: sicherer Checkout, SSL-Verschlüsselung, Geld-zurück-Garantie, verifizierter Shop, kostenloser Versand, Kartenzahlung, digitale Geldbörse, 24/7-Support, Datenschutz und Zufriedenheit. Du wählst, welche angezeigt werden, schreibst die Überschrift (oder lässt sie leer für nur Icons) und legst die Icon-Farbe fest.
 
@@ -30,8 +30,8 @@ Trust ist noch nicht im WordPress.org-Verzeichnis. Der Quellcode liegt auf GitHu
 
 * <strong>Dokumentation</strong> - https://plogins.com/de/plogins-trust/docs/
 * <strong>Plugin-Seite</strong> - https://plogins.com/de/plogins-trust/
-* <strong>Quellcode</strong> – https://github.com/wppoland/plogins-trust
-* <strong>Fehlerberichte und Funktionswünsche</strong> – https://github.com/wppoland/plogins-trust/issues
+* <strong>Quellcode</strong>, https://github.com/wppoland/plogins-trust
+* <strong>Fehlerberichte und Funktionswünsche</strong>, https://github.com/wppoland/plogins-trust/issues
 
 
 = Where badges appear =

@@ -1,5 +1,5 @@
 /**
- * Trust — admin settings screen.
+ * Trust, admin settings screen.
  *
  * A polished, themeable layer over the WordPress settings UI. Tokens live under
  * --trust-a-* so the look can be tuned in one place. Transitions are gated
@@ -10,7 +10,7 @@
 	/*
 	 * Section accent. Matches the storefront seal green (#155041) for family
 	 * consistency. Computed WCAG against wp-admin surfaces: 9.31:1 on #fff and
-	 * 8.17:1 on #f0f0f1 — well past AA for text (4.5:1) and UI (3:1). It does
+	 * 8.17:1 on #f0f0f1, well past AA for text (4.5:1) and UI (3:1). It does
 	 * not clash with WP's admin colour schemes, which only recolour chrome.
 	 */
 	--trust-a-accent: #155041;
@@ -156,7 +156,7 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Pure advertising (no disabled inputs), scoped to
  * .trust-admin. Reuses the section green accent (#155041, 9.31:1 on
  * white) for both decorative rules and white-on-accent CTAs.

@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: plogins-trust.php
 msgid "Trust - Trust Badges for WooCommerce"
-msgstr "Vertrauen – Vertrauensabzeichen für WooCommerce"
+msgstr "Vertrauen, Vertrauensabzeichen für WooCommerce"
 
 #. Plugin URI of the plugin
 #: plogins-trust.php
@@ -209,7 +209,7 @@ msgstr "Zufriedenheit (Daumen hoch)"
 #: plogins-trust.php:47
 msgid "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
 msgstr ""
-"Trust – Trust Badges für WooCommerce erfordert, dass WooCommerce aktiv ist."
+"Trust, Trust Badges für WooCommerce erfordert, dass WooCommerce aktiv ist."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"

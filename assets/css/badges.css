@@ -1,9 +1,9 @@
 /**
- * Trust — storefront badge row.
+ * Trust, storefront badge row.
  *
  * The row reads as a single *certified seal strip*: a faint certificate-paper
  * ground with an engraved hairline rule, and a lead seal that inscribes itself
- * once on first paint — a guilloché ring sweeping around the medallion the way
+ * once on first paint, a guilloché ring sweeping around the medallion the way
  * a security mark is etched into a certificate. Restraint elsewhere: the other
  * badges sit as clean line marks on the strip.
  *
@@ -14,7 +14,7 @@
  */
 
 .trust-badges {
-	/* Seal ink — engraved certificate green, NOT a default UI blue. Falls back
+	/* Seal ink, engraved certificate green, NOT a default UI blue. Falls back
 	   to the theme's own accent token where a theme exposes one. Deepened so the
 	   muted heading/label (rendered at <1 opacity) still clear WCAG AA 4.5:1 on
 	   the certificate-paper ground. */
@@ -68,7 +68,7 @@
 	box-shadow: inset 0 0 0 1px var(--trust-emboss);
 }
 
-/* Engraved hairline rule under the marks — the certified baseline. */
+/* Engraved hairline rule under the marks, the certified baseline. */
 .trust-badges__list::after {
 	content: "";
 	position: absolute;
@@ -172,7 +172,7 @@
 	box-shadow: inset 0 0 0 1px var(--trust-emboss);
 }
 
-/* The guilloché ring — a conic hairline that, on first paint, sweeps once
+/* The guilloché ring, a conic hairline that, on first paint, sweeps once
    around the medallion the way a security mark is engraved, then rests. */
 .trust-badge:first-child .trust-badge__icon::after {
 	content: "";
