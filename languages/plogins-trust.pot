@@ -26,7 +26,9 @@ msgstr ""
 
 #. Description of the plugin
 #: plogins-trust.php
-msgid "Show trust and secure-checkout badges to boost buyer confidence and conversions."
+msgid ""
+"Show trust and secure-checkout badges to boost buyer confidence and "
+"conversions."
 msgstr ""
 
 #. Author of the plugin
@@ -43,8 +45,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: src/Admin/Settings.php:58
-#: src/Admin/Settings.php:59
+#: src/Admin/Settings.php:58 src/Admin/Settings.php:59
 msgid "Trust Badges"
 msgstr ""
 
@@ -53,7 +54,9 @@ msgid "Reassure shoppers at the moment they decide to buy"
 msgstr ""
 
 #: src/Admin/Settings.php:123
-msgid "Trust shows a row of secure-checkout badges with a short heading after the add-to-cart button. Pick the badges, write the heading and choose the colour."
+msgid ""
+"Trust shows a row of secure-checkout badges with a short heading after the "
+"add-to-cart button. Pick the badges, write the heading and choose the colour."
 msgstr ""
 
 #: src/Admin/Settings.php:131
@@ -61,7 +64,10 @@ msgid "Display"
 msgstr ""
 
 #: src/Admin/Settings.php:132
-msgid "Trust works out of the box: leaving everything at its defaults shows four secure-checkout badges under the add-to-cart button. Adjust below only if you want to change what appears or where."
+msgid ""
+"Trust works out of the box: leaving everything at its defaults shows four "
+"secure-checkout badges under the add-to-cart button. Adjust below only if "
+"you want to change what appears or where."
 msgstr ""
 
 #: src/Admin/Settings.php:136
@@ -73,7 +79,9 @@ msgid "Show the trust-badge row on the storefront."
 msgstr ""
 
 #: src/Admin/Settings.php:142
-msgid "When off, no badges and no stylesheet load anywhere, the storefront is completely unaffected."
+msgid ""
+"When off, no badges and no stylesheet load anywhere, the storefront is "
+"completely unaffected."
 msgstr ""
 
 #: src/Admin/Settings.php:146
@@ -81,11 +89,15 @@ msgid "Show on product pages"
 msgstr ""
 
 #: src/Admin/Settings.php:150
-msgid "Show the badge row after the add-to-cart button on single product pages."
+msgid ""
+"Show the badge row after the add-to-cart button on single product pages."
 msgstr ""
 
 #: src/Admin/Settings.php:152
-msgid "Turn this off to keep the badges out of the product template and place them yourself with the [trust_badges] shortcode, for example inside a footer or a block."
+msgid ""
+"Turn this off to keep the badges out of the product template and place them "
+"yourself with the [trust_badges] shortcode, for example inside a footer or a "
+"block."
 msgstr ""
 
 #: src/Admin/Settings.php:157
@@ -93,7 +105,9 @@ msgid "Heading"
 msgstr ""
 
 #: src/Admin/Settings.php:161
-msgid "Short reassurance shown above the badges. Keep it under a line so it reads at a glance; leave it empty to show the icons on their own."
+msgid ""
+"Short reassurance shown above the badges. Keep it under a line so it reads "
+"at a glance; leave it empty to show the icons on their own."
 msgstr ""
 
 #: src/Admin/Settings.php:172
@@ -105,7 +119,10 @@ msgid "Icon colour"
 msgstr ""
 
 #: src/Admin/Settings.php:184
-msgid "Tints the icons and heading. Pick a shade that stays readable against your product page background, a dark slate or your brand colour usually works best."
+msgid ""
+"Tints the icons and heading. Pick a shade that stays readable against your "
+"product page background, a dark slate or your brand colour usually works "
+"best."
 msgstr ""
 
 #: src/Admin/Settings.php:192
@@ -113,7 +130,9 @@ msgid "Badges"
 msgstr ""
 
 #: src/Admin/Settings.php:193
-msgid "Choose which bundled badges to show. They are safe inline graphics, no external requests and no third-party logos."
+msgid ""
+"Choose which bundled badges to show. They are safe inline graphics, no "
+"external requests and no third-party logos."
 msgstr ""
 
 #: src/Admin/Settings.php:196
@@ -162,4 +181,64 @@ msgstr ""
 
 #: plogins-trust.php:47
 msgid "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr ""
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr ""
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
 msgstr ""

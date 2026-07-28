@@ -60,8 +60,7 @@ msgstr "Tranquilizar a los compradores en el momento en que deciden comprar"
 #: src/Admin/Settings.php:123
 msgid ""
 "Trust shows a row of secure-checkout badges with a short heading after the "
-"add-to-cart button. Pick the badges, write the heading and choose the "
-"colour."
+"add-to-cart button. Pick the badges, write the heading and choose the colour."
 msgstr ""
 "Trust muestra una fila de insignias de pago seguro con un encabezado corto "
 "después del botón Añadir al carrito. Elige las insignias, escribe el título "
@@ -112,8 +111,8 @@ msgstr ""
 #: src/Admin/Settings.php:152
 msgid ""
 "Turn this off to keep the badges out of the product template and place them "
-"yourself with the [trust_badges] shortcode, for example inside a footer or a"
-" block."
+"yourself with the [trust_badges] shortcode, for example inside a footer or a "
+"block."
 msgstr ""
 "Desactive esta opción para mantener las insignias fuera de la plantilla del "
 "producto y colóquelas tú mismo con el código corto [trust_badges], por "
@@ -128,8 +127,8 @@ msgid ""
 "Short reassurance shown above the badges. Keep it under a line so it reads "
 "at a glance; leave it empty to show the icons on their own."
 msgstr ""
-"Breve tranquilidad que se muestra encima de las insignias. Manténgalo debajo"
-" de una línea para que se lea de un vistazo; déjelo vacío para mostrar los "
+"Breve tranquilidad que se muestra encima de las insignias. Manténgalo debajo "
+"de una línea para que se lea de un vistazo; déjelo vacío para mostrar los "
 "íconos solos."
 
 #: src/Admin/Settings.php:172
@@ -147,8 +146,8 @@ msgid ""
 "best."
 msgstr ""
 "Tiñe los iconos y el título. Elija un tono que se mantenga legible en el "
-"fondo de la página de su producto; una pizarra oscura o el color de su marca"
-" generalmente funcionan mejor."
+"fondo de la página de su producto; una pizarra oscura o el color de su marca "
+"generalmente funcionan mejor."
 
 #: src/Admin/Settings.php:192
 msgid "Badges"
@@ -207,8 +206,67 @@ msgid "Satisfaction (thumbs up)"
 msgstr "Satisfacción (pulgar arriba)"
 
 #: plogins-trust.php:47
-msgid ""
-"Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
+msgid "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
 msgstr ""
 "Confianza: Trust Badges para WooCommerce requiere que WooCommerce esté "
 "activo."
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Próximamente"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Próximamente"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "desde %d zł/año"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "desde %1$s%2$d/año"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Mejora a PRO"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Permiso denegado."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Haz más con %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Descartar este aviso"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Desbloquea todas las funciones PRO"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "una licencia, todas las funciones PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Lo que añade %s"

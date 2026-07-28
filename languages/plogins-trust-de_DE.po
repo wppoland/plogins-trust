@@ -60,12 +60,11 @@ msgstr "Beruhige Käufer in dem Moment, in dem sie sich zum Kauf entscheiden"
 #: src/Admin/Settings.php:123
 msgid ""
 "Trust shows a row of secure-checkout badges with a short heading after the "
-"add-to-cart button. Pick the badges, write the heading and choose the "
-"colour."
+"add-to-cart button. Pick the badges, write the heading and choose the colour."
 msgstr ""
 "Trust zeigt eine Reihe von Secure-Checkout-Badges mit einer kurzen "
-"Überschrift nach der Schaltfläche „In den Warenkorb“ an. Wähle die Abzeichen"
-" aus, schreibe die Überschrift und wähle die Farbe."
+"Überschrift nach der Schaltfläche „In den Warenkorb“ an. Wähle die Abzeichen "
+"aus, schreibe die Überschrift und wähle die Farbe."
 
 #: src/Admin/Settings.php:131
 msgid "Display"
@@ -106,14 +105,14 @@ msgstr "Auf Produktseiten anzeigen"
 msgid ""
 "Show the badge row after the add-to-cart button on single product pages."
 msgstr ""
-"Zeige die Badge-Zeile nach der Schaltfläche „In den Warenkorb“ auf einzelnen"
-" Produktseiten an."
+"Zeige die Badge-Zeile nach der Schaltfläche „In den Warenkorb“ auf einzelnen "
+"Produktseiten an."
 
 #: src/Admin/Settings.php:152
 msgid ""
 "Turn this off to keep the badges out of the product template and place them "
-"yourself with the [trust_badges] shortcode, for example inside a footer or a"
-" block."
+"yourself with the [trust_badges] shortcode, for example inside a footer or a "
+"block."
 msgstr ""
 "Deaktiviere diese Option, um die Abzeichen aus der Produktvorlage "
 "herauszuhalten und sie selbst mit dem Shortcode [trust_badges] zu "
@@ -147,8 +146,8 @@ msgid ""
 "best."
 msgstr ""
 "Tönt die Symbole und Überschriften. Wähle einen Farbton, der vor dem "
-"Hintergrund deiner Produktseite gut lesbar bleibt. Eine dunkle Schieferfarbe"
-" oder deine Markenfarbe funktioniert normalerweise am besten."
+"Hintergrund deiner Produktseite gut lesbar bleibt. Eine dunkle Schieferfarbe "
+"oder deine Markenfarbe funktioniert normalerweise am besten."
 
 #: src/Admin/Settings.php:192
 msgid "Badges"
@@ -208,7 +207,66 @@ msgid "Satisfaction (thumbs up)"
 msgstr "Zufriedenheit (Daumen hoch)"
 
 #: plogins-trust.php:47
-msgid ""
-"Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
+msgid "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
 msgstr ""
 "Trust – Trust Badges für WooCommerce erfordert, dass WooCommerce aktiv ist."
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Demnächst"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Demnächst"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "ab %d zł/Jahr"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "ab %1$s%2$d/Jahr"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Auf PRO upgraden"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Mehr erreichen mit %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Alle PRO-Funktionen freischalten"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "eine Lizenz, alle PRO-Funktionen"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Was %s ergänzt"
