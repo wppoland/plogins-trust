@@ -1,7 +1,7 @@
 <?php
 /**
  * Service wiring. Returns a closure that registers every service in the
- * container. Keep services thin and focused — Trust is pure presentation.
+ * container. Keep services thin and focused, Trust is pure presentation.
  *
  * @package Trust
  */

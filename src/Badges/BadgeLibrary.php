@@ -11,7 +11,7 @@ defined('ABSPATH') || exit;
  *
  * Each badge is a hand-authored, self-contained inline SVG (no external
  * requests, no tracking, no third-party logos that would breach trademark
- * rules). They are generic, recognisable secure-checkout iconography — a lock,
+ * rules). They are generic, recognisable secure-checkout iconography, a lock,
  * a shield, a money-back guarantee, generic card/wallet shapes, etc. The SVGs
  * use `currentColor` so they inherit the merchant's chosen badge colour.
  *

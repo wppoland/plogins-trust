@@ -33,10 +33,16 @@ final class ProUpsell
     private function data(): array
     {
         if ($this->data === null) {
-            $file = TRUST_DIR . 'config/pro-upsell.php';
+            $file = \TRUST_DIR . 'config/pro-upsell.php';
             $this->data = is_readable($file) ? (array) require $file : [];
         }
         return $this->data;
+    }
+
+    /** Whether the PRO edition can actually be bought yet. */
+    private function sellable(): bool
+    {
+        return (bool) ($this->data()['sellable'] ?? false);
     }
 
     /** Whether to render the promo at all (filterable for white-label builds). */
@@ -52,11 +58,11 @@ final class ProUpsell
 
     private function url(): string
     {
-        $default = (string) ($this->data()['url'] ?? 'https://plogins.com/plogins-trust-pro/pricing/');
+        $default = (string) ($this->data()['url'] ?? 'https://plogins.com/plogins-trust-pro/');
         /**
-         * Filters the URL the "Upgrade to PRO" buttons point at.
+         * Filters the URL the PRO call-to-action buttons point at.
          *
-         * @param string $url Default the Trust PRO pricing page.
+         * @param string $url Default the Trust PRO page.
          */
         return (string) apply_filters('trust/pro_url', $default);
     }
@@ -68,6 +74,9 @@ final class ProUpsell
 
     private function priceLabel(): string
     {
+        if (! $this->sellable()) {
+            return $this->isPolish() ? __('Wkrótce', 'plogins-trust') : __('Coming soon', 'plogins-trust');
+        }
         $d = $this->data();
         if ($this->isPolish() && ! empty($d['price_pln'])) {
             /* translators: %d: yearly price in PLN */
@@ -79,6 +88,14 @@ final class ProUpsell
             return sprintf(__('from %1$s%2$d/yr', 'plogins-trust'), $cur, (int) $d['price_from']);
         }
         return '';
+    }
+
+    /** The call-to-action label: buy when sellable, otherwise a soft notify. */
+    private function ctaLabel(): string
+    {
+        return $this->sellable()
+            ? __('Upgrade to PRO', 'plogins-trust')
+            : ($this->isPolish() ? __('Powiadom mnie', 'plogins-trust') : __('Get notified', 'plogins-trust'));
     }
 
     /** @return array<int, array{title: string, desc: string}> */
@@ -143,7 +160,7 @@ final class ProUpsell
                 <?php if ($price !== '') : ?><span class="trust-pro-banner__price"><?php echo esc_html($price); ?></span><?php endif; ?>
             </p>
             <a class="button button-primary trust-pro-banner__cta" href="<?php echo esc_url($this->url()); ?>" target="_blank" rel="noopener noreferrer">
-                <?php esc_html_e('Upgrade to PRO', 'plogins-trust'); ?>
+                <?php echo esc_html($this->ctaLabel()); ?>
             </a>
             <a class="trust-pro-banner__dismiss" href="<?php echo esc_url($this->dismissUrl()); ?>" aria-label="<?php esc_attr_e('Dismiss this notice', 'plogins-trust'); ?>">&times;</a>
         </div>
@@ -172,10 +189,10 @@ final class ProUpsell
                 <?php endforeach; ?>
             </ul>
             <a class="button button-primary button-hero trust-pro-aside__cta" href="<?php echo esc_url($this->url()); ?>" target="_blank" rel="noopener noreferrer">
-                <?php esc_html_e('Upgrade to PRO', 'plogins-trust'); ?>
+                <?php echo esc_html($this->ctaLabel()); ?>
             </a>
             <?php if ($price !== '') : ?>
-                <p class="trust-pro-aside__price"><?php echo esc_html($price); ?> · <?php esc_html_e('one licence, every PRO feature', 'plogins-trust'); ?></p>
+                <p class="trust-pro-aside__price"><?php echo esc_html($price); ?><?php if ($this->sellable()) : ?> · <?php esc_html_e('one licence, every PRO feature', 'plogins-trust'); ?><?php endif; ?></p>
             <?php endif; ?>
         </aside>
         <?php
