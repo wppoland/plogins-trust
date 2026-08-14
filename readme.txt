@@ -4,7 +4,7 @@ Tags: woocommerce, trust badges, secure checkout, conversion, ecommerce
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -95,6 +95,9 @@ Trust does not connect to any external services. Every badge is a bundled inline
 Plogins Trust includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-trust`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.6 =
+* Your chosen icon colour now applies to badges placed with the [trust_badges] shortcode, including when "Show on product pages" is off. Those badges used to ignore the colour picker and show up in the stylesheet's default green.
 
 = 1.0.4 =
 * Translations: completed Polish, German and Spanish for the PRO upgrade panel.
