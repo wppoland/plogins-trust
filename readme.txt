@@ -24,14 +24,14 @@ It is built to stay out of the way:
 * **Accessible.** Each badge has an accessible name and the row is marked up as a list. The small hover animation is skipped for visitors who set `prefers-reduced-motion`.
 * **Inherits your colour.** Set one colour and every badge follows it via `currentColor`.
 
-Trust is not yet on the WordPress.org directory. The source lives on GitHub at https://github.com/wppoland/plogins-trust if you want to read the code or report a bug.
+Trust is not yet on the WordPress.org directory. The source lives on GitHub at [github.com/wppoland/plogins-trust](https://github.com/wppoland/plogins-trust) if you want to read the code or report a bug.
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-trust/docs/
-* **Plugin page** - https://plogins.com/plogins-trust/
-* **Source code** - https://github.com/wppoland/plogins-trust
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-trust/issues
+* **Documentation**: [plogins.com/plogins-trust/docs/](https://plogins.com/plogins-trust/docs/)
+* **Plugin page**: [plogins.com/plogins-trust/](https://plogins.com/plogins-trust/)
+* **Source code**: [github.com/wppoland/plogins-trust](https://github.com/wppoland/plogins-trust)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-trust/issues](https://github.com/wppoland/plogins-trust/issues)
 
 
 = Where badges appear =
