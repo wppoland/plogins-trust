@@ -4,7 +4,7 @@ Tags: woocommerce, trust badges, secure checkout, conversion, ecommerce
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -95,6 +95,9 @@ Trust does not connect to any external services. Every badge is a bundled inline
 Plogins Trust includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-trust`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.7 =
+* Fixed the PRO promo on the settings screen quoting a price in PLN. PRO is priced and charged in EUR, so an admin on a Polish site was shown a zloty amount and then billed in euro, and the zloty figure was a fixed conversion that drifted from the real charge as the rate moved. The promo now shows the euro price that is actually taken.
 
 = 1.0.6 =
 * Your chosen icon colour now applies to badges placed with the [trust_badges] shortcode, including when "Show on product pages" is off. Those badges used to ignore the colour picker and show up in the stylesheet's default green.

@@ -15,7 +15,6 @@ return [
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',
-    'price_pln'  => 85,
     'lead'       => [
         'en' => 'Sticky trust bar, badge schedules, per-product badge sets, badge analytics and expanded badge library ship in version 0.5.0.',
         'pl' => 'Przyklejony pasek, harmonogramy, zestawy per produkt, analityka wyświetleń i rozszerzona biblioteka odznak są dostępne w wydaniu 0.5.0.',
