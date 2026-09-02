@@ -92,7 +92,7 @@ Trust does not connect to any external services. Every badge is a bundled inline
 
 == Translations ==
 
-Plogins Trust includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-trust`, so WordPress.org language packs can also override or extend these bundled translations.
+Plogins Trust is fully translatable and ships the `plogins-trust.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
 
