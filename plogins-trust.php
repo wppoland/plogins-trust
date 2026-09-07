@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Trust - Trust Badges for WooCommerce
+ * Plugin Name:       Plogins Trust - Trust Badges for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-trust/
  * Description:        Show trust and secure-checkout badges to boost buyer confidence and conversions.
- * Version:           1.0.8
+ * Version:           1.0.9
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
@@ -25,7 +25,7 @@ namespace Trust;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.0.8';
+const VERSION     = '1.0.9';
 const PLUGIN_FILE = __FILE__;
 
 define('TRUST_DIR', plugin_dir_path(__FILE__));
@@ -45,7 +45,7 @@ add_action('plugins_loaded', static function (): void {
     if (! class_exists('WooCommerce')) {
         add_action('admin_notices', static function (): void {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Trust - Trust Badges for WooCommerce requires WooCommerce to be active.', 'plogins-trust');
+            echo esc_html__('Plogins Trust - Trust Badges for WooCommerce requires WooCommerce to be active.', 'plogins-trust');
             echo '</p></div>';
         });
         return;
