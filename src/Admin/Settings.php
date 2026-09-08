@@ -8,6 +8,7 @@ defined('ABSPATH') || exit;
 
 use Trust\Badges\BadgeLibrary;
 use Trust\Contract\HasHooks;
+use Trust\Service\Texts;
 
 /**
  * Admin settings page registered under the WooCommerce menu.
@@ -163,24 +164,33 @@ final class Settings implements HasHooks
                                 </td>
                             </tr>
                             <tr>
+                                <th scope="row"><?php esc_html_e('Show the heading', 'plogins-trust'); ?></th>
+                                <td>
+                                    <label for="trust_show_heading">
+                                        <input type="checkbox" id="trust_show_heading" name="<?php echo esc_attr(self::OPTION); ?>[show_heading]" value="1" <?php checked((bool) ($settings['show_heading'] ?? false), true); ?> />
+                                        <?php esc_html_e('Print a line of text above the badges.', 'plogins-trust'); ?>
+                                    </label>
+                                    <p class="description"><?php esc_html_e('Turn this off to show the icons on their own.', 'plogins-trust'); ?></p>
+                                </td>
+                            </tr>
+                            <tr>
                                 <th scope="row">
                                     <label for="trust_heading"><?php esc_html_e('Heading', 'plogins-trust'); ?></label>
                                 </th>
                                 <td>
-                                    <input type="text" id="trust_heading" name="<?php echo esc_attr(self::OPTION); ?>[heading]" value="<?php echo esc_attr((string) ($settings['heading'] ?? '')); ?>" class="regular-text" />
-                                    <p class="description"><?php esc_html_e('Short reassurance shown above the badges. Keep it under a line so it reads at a glance; leave it empty to show the icons on their own.', 'plogins-trust'); ?></p>
+                                    <?php $headingDefault = Texts::defaults()['heading']; ?>
+                                    <input type="text" id="trust_heading" name="<?php echo esc_attr(self::OPTION); ?>[heading]" value="<?php echo esc_attr((string) ($settings['heading'] ?? '')); ?>" placeholder="<?php echo esc_attr($headingDefault); ?>" class="regular-text" />
+                                    <p class="description"><?php esc_html_e('Short reassurance shown above the badges. Keep it under a line so it reads at a glance; leave it empty to use the wording shown in the field, translated into your site language.', 'plogins-trust'); ?></p>
                                     <span class="trust-admin__example">
                                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                             <path d="M12 3 5 6v5c0 4.2 2.9 8.1 7 9 4.1-.9 7-4.8 7-9V6l-7-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
                                             <path d="m9 12 2.2 2.2L15 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                         <?php
+                                        // Preview only. The raw value above is what gets saved, so an
+                                        // untouched empty field stays empty in the option.
                                         $headingPreview = trim((string) ($settings['heading'] ?? ''));
-                                        echo esc_html(
-                                            $headingPreview !== ''
-                                                ? $headingPreview
-                                                : __('Guaranteed safe checkout', 'plogins-trust')
-                                        );
+                                        echo esc_html($headingPreview !== '' ? $headingPreview : $headingDefault);
                                         ?>
                                     </span>
                                 </td>
@@ -279,6 +289,9 @@ final class Settings implements HasHooks
             }
         }
 
+        // An empty heading is stored as empty, never replaced with the packaged
+        // English: the storefront resolves it through Texts, so it follows the
+        // site language instead of freezing one language into the option.
         $heading = isset($raw['heading']) ? sanitize_text_field((string) $raw['heading']) : '';
 
         $color = isset($raw['icon_color']) ? sanitize_hex_color((string) $raw['icon_color']) : null;
@@ -290,6 +303,7 @@ final class Settings implements HasHooks
         $sanitized = array_merge($defaults, [
             'enabled'         => ! empty($raw['enabled']),
             'heading'         => $heading,
+            'show_heading'    => ! empty($raw['show_heading']),
             'badges'          => $badges,
             'show_on_product' => ! empty($raw['show_on_product']),
             'icon_color'      => $color,
@@ -299,7 +313,12 @@ final class Settings implements HasHooks
     }
 
     /**
-     * Stored settings merged over packaged defaults.
+     * Stored settings merged over packaged defaults, RAW.
+     *
+     * Deliberately no Texts::apply() here: the settings screen must show what is
+     * actually stored, so an untouched empty heading is saved back empty and
+     * keeps following the site language. Resolving it here would write one
+     * language into the option on the next save.
      *
      * @return array<string, mixed>
      */

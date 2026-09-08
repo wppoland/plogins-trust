@@ -121,8 +121,14 @@ final class BadgesService implements HasHooks
             $this->printInlineColor();
         }
 
+        // An unticked "show heading" prints the icons on their own; the template
+        // skips an empty heading.
+        $heading = empty($settings['show_heading'])
+            ? ''
+            : (string) ($settings['heading'] ?? '');
+
         $context = [
-            'heading'   => (string) ($settings['heading'] ?? ''),
+            'heading'   => $heading,
             'items'     => $items,
             'placement' => $placement,
         ];
@@ -205,7 +211,8 @@ final class BadgesService implements HasHooks
     }
 
     /**
-     * Stored settings merged over packaged defaults.
+     * Stored settings merged over packaged defaults, with customer-facing text
+     * resolved for display.
      *
      * @return array<string, mixed>
      */
@@ -220,7 +227,11 @@ final class BadgesService implements HasHooks
         /** @var array<string, mixed> $defaults */
         $defaults = require \TRUST_DIR . 'config/defaults.php';
 
-        return array_merge($defaults, $stored);
+        // Texts::apply() fills an empty heading with its translated default on
+        // the way out, where it is about to be printed. It is never written
+        // back: storing the resolved string would freeze one language into the
+        // option, which is the bug it exists to fix.
+        return Texts::apply(array_merge($defaults, $stored));
     }
 
     /**

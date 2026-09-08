@@ -4,7 +4,7 @@ Tags: woocommerce, trust badges, secure checkout, conversion, ecommerce
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.9
+Stable tag: 1.0.10
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,7 @@ Add a row of secure-checkout badges after the add-to-cart button to reassure sho
 
 Trust shows a row of secure-checkout badges after the add-to-cart button, under a short heading like "Guaranteed safe checkout". The idea is simple: put a reminder that the store is safe right where the shopper decides whether to buy.
 
-The plugin includes ten hand-drawn inline SVG badges: secure checkout, SSL encrypted, money-back guarantee, verified store, free shipping, card payment, digital wallet, 24/7 support, privacy protected and satisfaction. You pick which ones to show, write the heading (or leave it blank for icons only) and set the icon colour.
+The plugin includes ten hand-drawn inline SVG badges: secure checkout, SSL encrypted, money-back guarantee, verified store, free shipping, card payment, digital wallet, 24/7 support, privacy protected and satisfaction. You pick which ones to show, write the heading (or turn the heading off for icons only) and set the icon colour.
 
 It is built to stay out of the way:
 
@@ -44,7 +44,7 @@ Trust is not yet on the WordPress.org directory. The source lives on GitHub at [
 A settings page under the WooCommerce menu lets you:
 
 * Enable or disable the badges.
-* Write the heading (or leave it empty for icons only).
+* Write the heading, or turn it off for icons only. Left empty, it uses the bundled wording in your site language.
 * Pick which bundled badges to show.
 * Choose the icon colour.
 
@@ -95,6 +95,10 @@ Trust does not connect to any external services. Every badge is a bundled inline
 Plogins Trust is fully translatable and ships the `plogins-trust.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.10 =
+* Fixed the badge heading always printing in English. "Guaranteed safe checkout" was a plain string in the plugin's default settings, so it never reached the translation files and was written into the database when the plugin was activated. On a site running in Polish, German or Spanish the badges were translated but the line above them was not, and no language pack could reach it. The heading is a translatable string now and follows the site language as soon as a translation for it exists. Translations arrive as WordPress.org language packs rather than bundled in this download, so it stays English until a pack is published. A heading you typed yourself is kept exactly as you typed it.
+* Added a "Show the heading" switch. Leaving the heading field empty used to be the way to show the icons on their own; empty now means "use the default wording, translated", so the switch takes over that job. If your heading was empty, the switch is turned off for you and your product pages look the same as before.
 
 = 1.0.9 =
 * Renamed to Plogins Trust - Trust Badges for WooCommerce so the name leads with the brand rather than a generic word, which is what the WordPress.org plugin review team asks for. The plugin slug is unchanged.

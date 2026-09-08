@@ -3,12 +3,13 @@
  * Default settings, merged under the option key `trust_settings`.
  *
  * The plugin ships enabled, showing a row of secure-checkout badges with a
- * "Guaranteed safe checkout" heading after the add-to-cart button on the single
- * product page. The merchant tunes the heading, which badges show and the icon
- * colour from the Trust admin screen.
+ * heading after the add-to-cart button on the single product page. The merchant
+ * tunes the heading, which badges show and the icon colour from the Trust admin
+ * screen.
  *
- * No translation calls here: this file is required at boot to seed the option,
- * and the badge labels are translated where they are displayed, never stored.
+ * Customer-facing text is NOT written here. A string in this file is seeded into
+ * the option at activation and is never a gettext call, so it reaches no .pot
+ * and no language pack can replace it once it sits in the database.
  *
  * @package Trust
  *
@@ -22,8 +23,13 @@ defined('ABSPATH') || exit;
 return [
     'enabled' => true,
 
-    // Heading shown above the badge row. Empty hides the heading entirely.
-    'heading' => 'Guaranteed safe checkout',
+    // Heading shown above the badge row. Empty on purpose: empty means "use
+    // Trust\Service\Texts", which is translated, and anything a merchant types
+    // still wins. To print the icons on their own, untick `show_heading`.
+    'heading' => '',
+
+    // Print the heading above the badge row.
+    'show_heading' => true,
 
     // Which bundled badges to show, in display order (slugs from BadgeLibrary).
     'badges' => ['secure_checkout', 'ssl_encrypted', 'money_back', 'card_payment'],
