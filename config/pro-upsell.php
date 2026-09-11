@@ -37,8 +37,8 @@ return [
             'pl' => ['title' => 'Analityka wyświetleń odznak', 'desc' => 'Lekkie liczniki wyświetleń per odznaka przez trust/badges_rendered (wdrożone).'],
         ],
         [
-            'en' => ['title' => 'PRO settings', 'desc' => 'Configure the sticky bar and display schedules under WooCommerce → Trust Bar (Pro).'],
-            'pl' => ['title' => 'Ustawienia PRO', 'desc' => 'Skonfiguruj przyklejony pasek i harmonogramy w WooCommerce → Trust Bar (Pro).'],
+            'en' => ['title' => 'PRO settings', 'desc' => 'Configure the sticky bar and display schedules under WooCommerce > Trust Bar (Pro).'],
+            'pl' => ['title' => 'Ustawienia PRO', 'desc' => 'Skonfiguruj przyklejony pasek i harmonogramy w WooCommerce > Trust Bar (Pro).'],
         ],
         [
             'en' => ['title' => 'Expanded badge library', 'desc' => '12 additional inline-SVG badges, curated preset sets and visual pickers (shipped).'],
