@@ -50,9 +50,9 @@ Una página de ajustes en el menú de WooCommerce te permite:
 
 == Installation ==
 
-1. Sube el plugin a `/wp-content/plugins/trust` o instálalo desde Plugins → Añadir nuevo.
+1. Sube el plugin a `/wp-content/plugins/trust` o instálalo desde Plugins > Añadir nuevo.
 2. Actívalo. WooCommerce debe estar instalado y activo.
-3. Entra en <strong>WooCommerce → Trust Badges</strong> para elegir tus insignias, encabezado y color.
+3. Entra en <strong>WooCommerce > Trust Badges</strong> para elegir tus insignias, encabezado y color.
 
 == Frequently Asked Questions ==
 
