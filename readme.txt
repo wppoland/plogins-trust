@@ -1,10 +1,10 @@
-=== Plogins Trust - Trust Badges for WooCommerce ===
+=== Fidindo - Trust Badges for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, trust badges, secure checkout, conversion, ecommerce
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.12
+Stable tag: 1.1.0
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ Add a row of secure-checkout badges after the add-to-cart button to reassure sho
 
 == Description ==
 
-Trust shows a row of secure-checkout badges after the add-to-cart button, under a short heading like "Guaranteed safe checkout". The idea is simple: put a reminder that the store is safe right where the shopper decides whether to buy.
+Fidindo shows a row of secure-checkout badges after the add-to-cart button, under a short heading like "Guaranteed safe checkout". The idea is simple: put a reminder that the store is safe right where the shopper decides whether to buy.
 
 The plugin includes ten hand-drawn inline SVG badges: secure checkout, SSL encrypted, money-back guarantee, verified store, free shipping, card payment, digital wallet, 24/7 support, privacy protected and satisfaction. You pick which ones to show, write the heading (or turn the heading off for icons only) and set the icon colour.
 
@@ -24,7 +24,7 @@ It is built to stay out of the way:
 * **Accessible.** Each badge has an accessible name and the row is marked up as a list. The small hover animation is skipped for visitors who set `prefers-reduced-motion`.
 * **Inherits your colour.** Set one colour and every badge follows it via `currentColor`.
 
-Trust is not yet on the WordPress.org directory. The source lives on GitHub at [github.com/wppoland/plogins-trust](https://github.com/wppoland/plogins-trust) if you want to read the code or report a bug.
+Fidindo is not yet on the WordPress.org directory. The source lives on GitHub at [github.com/wppoland/plogins-trust](https://github.com/wppoland/plogins-trust) if you want to read the code or report a bug.
 
 = Documentation and links =
 
@@ -50,7 +50,7 @@ A settings page under the WooCommerce menu lets you:
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/trust`, or install via Plugins > Add New.
+1. Upload the plugin to `/wp-content/plugins/fidindo`, or install via Plugins > Add New.
 2. Activate it. WooCommerce must be installed and active.
 3. Visit **WooCommerce > Trust Badges** to choose your badges, heading and colour.
 
@@ -58,7 +58,7 @@ A settings page under the WooCommerce menu lets you:
 
 = Does it require WooCommerce? =
 
-Yes. Trust requires an active WooCommerce installation.
+Yes. Fidindo requires an active WooCommerce installation.
 
 = Does it load anything from third-party servers? =
 
@@ -84,17 +84,20 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 == Screenshots ==
 
 1. The trust-badge row beneath the add-to-cart button on a single product page.
-2. The Trust Badges settings screen.
+2. The Fidindo settings screen for badges.
 
 == External Services ==
 
-Trust does not connect to any external services. Every badge is a bundled inline SVG served from your own site, so the storefront output loads nothing from third parties and the plugin makes no network requests. Your choices (the heading, selected badges and icon colour) are kept on your own site in a single `trust_settings` option, alongside a `trust_db_version` marker; both are removed when you delete the plugin. The plugin sends no email and stores no visitor or customer data.
+Fidindo does not connect to any external services. Every badge is a bundled inline SVG served from your own site, so the storefront output loads nothing from third parties and the plugin makes no network requests. Your choices (the heading, selected badges and icon colour) are kept on your own site in a single `trust_settings` option, alongside a `trust_db_version` marker; both are removed when you delete the plugin. The plugin sends no email and stores no visitor or customer data.
 
 == Translations ==
 
-Plogins Trust is fully translatable and ships the `plogins-trust.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
+Fidindo is fully translatable and ships the `fidindo.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.0 =
+* Renamed to Fidindo. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Fidindo comes from the Esperanto fidinda, trustworthy. The text domain follows the name; the stored data, the settings and every hook are unchanged.
 
 = 1.0.12 =
 * Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.

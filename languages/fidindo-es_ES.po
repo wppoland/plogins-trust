@@ -13,21 +13,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: plogins-trust\n"
+"X-Domain: fidindo\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: plogins-trust.php
+#: fidindo.php
 msgid "Trust - Trust Badges for WooCommerce"
 msgstr "Confianza - Insignias de confianza para WooCommerce"
 
 #. Plugin URI of the plugin
-#: plogins-trust.php
+#: fidindo.php
 msgid "https://plogins.com/trust/"
 msgstr "https://plogins.com/es/trust/"
 
 #. Description of the plugin
-#: plogins-trust.php
+#: fidindo.php
 msgid ""
 "Show trust and secure-checkout badges to boost buyer confidence and "
 "conversions."
@@ -36,12 +36,12 @@ msgstr ""
 "del comprador y las conversiones."
 
 #. Author of the plugin
-#: plogins-trust.php
+#: fidindo.php
 msgid "WPPoland"
 msgstr "WPPoland"
 
 #. Author URI of the plugin
-#: plogins-trust.php
+#: fidindo.php
 msgid "https://plogins.com/"
 msgstr "https://plogins.com/"
 
@@ -205,7 +205,7 @@ msgstr "Privacidad protegida"
 msgid "Satisfaction (thumbs up)"
 msgstr "Satisfacción (pulgar arriba)"
 
-#: plogins-trust.php:47
+#: fidindo.php:47
 msgid "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
 msgstr ""
 "Confianza: Trust Badges para WooCommerce requiere que WooCommerce esté "

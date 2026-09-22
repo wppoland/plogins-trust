@@ -30,7 +30,7 @@ final class Texts
     public static function defaults(): array
     {
         return [
-            'heading' => __('Guaranteed safe checkout', 'plogins-trust'),
+            'heading' => __('Guaranteed safe checkout', 'fidindo'),
         ];
     }
 

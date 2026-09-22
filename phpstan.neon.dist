@@ -4,7 +4,7 @@ includes:
 parameters:
     level: 6
     paths:
-        - plogins-trust.php
+        - fidindo.php
         - src
         - config
     excludePaths:
