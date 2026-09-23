@@ -29,8 +29,8 @@ return [
             'pl' => ['title' => 'Harmonogramy odznak', 'desc' => 'Pokazywanie odznak w zakresie dat, z automatycznym powrotem (dla rzędu i paska).'],
         ],
         [
-            'en' => ['title' => 'Per-product badge sets', 'desc' => 'Choose a custom badge list on the product General tab for the Trust row and sticky bar on that product page.'],
-            'pl' => ['title' => 'Zestawy odznak per produkt', 'desc' => 'Wybierz własny zestaw odznak w zakładce Ogólne produktu dla rzędu Trust i paska na tej karcie.'],
+            'en' => ['title' => 'Per-product badge sets', 'desc' => 'Choose a custom badge list on the product General tab for the badge row and sticky bar on that product page.'],
+            'pl' => ['title' => 'Zestawy odznak per produkt', 'desc' => 'Wybierz własny zestaw odznak w zakładce Ogólne produktu dla rzędu odznak i paska na tej karcie.'],
         ],
         [
             'en' => ['title' => 'Badge impression analytics', 'desc' => 'Lightweight per-badge view counters via trust/badges_rendered (shipped).'],
