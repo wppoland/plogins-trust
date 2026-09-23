@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Trust - Trust Badges for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trust\n"
-"POT-Creation-Date: 2026-06-16T20:23:40+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/fidindo\n"
+"POT-Creation-Date: 2026-09-08T13:44:43+00:00\n"
 "PO-Revision-Date: 2026-06-15 00:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -19,13 +19,13 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: fidindo.php
-msgid "Trust - Trust Badges for WooCommerce"
-msgstr "Trust - Odznaki zaufania dla WooCommerce"
+msgid "Fidindo - Trust Badges for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
 #: fidindo.php
-msgid "https://plogins.com/trust/"
-msgstr "https://plogins.com/trust/"
+msgid "https://plogins.com/plogins-trust/"
+msgstr ""
 
 #. Description of the plugin
 #: fidindo.php
@@ -38,59 +38,111 @@ msgstr ""
 
 #. Author of the plugin
 #: fidindo.php
-msgid "WPPoland"
-msgstr "WPPoland"
+msgid "WPPoland.com"
+msgstr ""
 
 #. Author URI of the plugin
 #: fidindo.php
-msgid "https://plogins.com/"
-msgstr "https://plogins.com/"
+msgid "https://wppoland.com"
+msgstr ""
 
-#: src/Admin/Settings.php:46
+#: fidindo.php:48
+msgid ""
+"Fidindo - Trust Badges for WooCommerce requires WooCommerce to be active."
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Wkrótce"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Wkrótce"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "od %1$s%2$d/rok"
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr "Przejdź na PRO"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr "Brak uprawnień."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr "Zrób więcej dzięki %s"
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr "Odrzuć to powiadomienie"
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr "Odblokuj wszystkie funkcje PRO"
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr "jedna licencja, wszystkie funkcje PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr "Co dodaje %s"
+
+#: src/Admin/Settings.php:55
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: src/Admin/Settings.php:58 src/Admin/Settings.php:59
+#: src/Admin/Settings.php:67 src/Admin/Settings.php:68
 msgid "Trust Badges"
 msgstr "Odznaki zaufania"
 
-#: src/Admin/Settings.php:122
+#: src/Admin/Settings.php:133
 msgid "Reassure shoppers at the moment they decide to buy"
 msgstr "Zapewnij kupujących o bezpieczeństwie w chwili decyzji o zakupie"
 
-#: src/Admin/Settings.php:123
+#: src/Admin/Settings.php:134
 msgid ""
-"Trust shows a row of secure-checkout badges with a short heading after the "
+"Fidindo shows a row of secure-checkout badges with a short heading after the "
 "add-to-cart button. Pick the badges, write the heading and choose the colour."
 msgstr ""
-"Trust wyświetla rząd odznak bezpiecznych płatności z krótkim nagłówkiem pod "
-"przyciskiem dodawania do koszyka. Wybierz odznaki, wpisz nagłówek i ustaw "
-"kolor."
 
-#: src/Admin/Settings.php:131
+#: src/Admin/Settings.php:142
 msgid "Display"
 msgstr "Wyświetlanie"
 
-#: src/Admin/Settings.php:132
+#: src/Admin/Settings.php:143
 msgid ""
-"Trust works out of the box: leaving everything at its defaults shows four "
+"Fidindo works out of the box: leaving everything at its defaults shows four "
 "secure-checkout badges under the add-to-cart button. Adjust below only if "
 "you want to change what appears or where."
 msgstr ""
-"Trust działa od razu: pozostawienie wszystkiego w ustawieniach domyślnych "
-"powoduje wyświetlenie czterech plakietek bezpiecznej płatności pod "
-"przyciskiem Dodaj do koszyka. Dostosuj poniżej tylko wtedy, gdy chcesz "
-"zmienić to, co i gdzie się pojawia."
 
-#: src/Admin/Settings.php:136
+#: src/Admin/Settings.php:147
 msgid "Enable trust badges"
 msgstr "Włącz odznaki zaufania"
 
-#: src/Admin/Settings.php:140
+#: src/Admin/Settings.php:151
 msgid "Show the trust-badge row on the storefront."
 msgstr "Wyświetlaj rząd odznak zaufania w sklepie."
 
-#: src/Admin/Settings.php:142
+#: src/Admin/Settings.php:153
 msgid ""
 "When off, no badges and no stylesheet load anywhere, the storefront is "
 "completely unaffected."
@@ -98,18 +150,18 @@ msgstr ""
 "Po wyłączeniu nigdzie nie wczytują się żadne odznaki ani arkusz stylów, "
 "sklep pozostaje całkowicie nienaruszony."
 
-#: src/Admin/Settings.php:146
+#: src/Admin/Settings.php:157
 msgid "Show on product pages"
 msgstr "Wyświetlaj na stronach produktów"
 
-#: src/Admin/Settings.php:150
+#: src/Admin/Settings.php:161
 msgid ""
 "Show the badge row after the add-to-cart button on single product pages."
 msgstr ""
 "Wyświetlaj rząd odznak pod przyciskiem dodawania do koszyka na stronach "
 "pojedynczych produktów."
 
-#: src/Admin/Settings.php:152
+#: src/Admin/Settings.php:163
 msgid ""
 "Turn this off to keep the badges out of the product template and place them "
 "yourself with the [trust_badges] shortcode, for example inside a footer or a "
@@ -119,28 +171,34 @@ msgstr ""
 "umieść je samodzielnie z krótkim kodem [trust_badges], na przykład w stopce "
 "lub bloku."
 
-#: src/Admin/Settings.php:157
+#: src/Admin/Settings.php:167
+msgid "Show the heading"
+msgstr ""
+
+#: src/Admin/Settings.php:171
+msgid "Print a line of text above the badges."
+msgstr ""
+
+#: src/Admin/Settings.php:173
+msgid "Turn this off to show the icons on their own."
+msgstr ""
+
+#: src/Admin/Settings.php:178
 msgid "Heading"
 msgstr "Nagłówek"
 
-#: src/Admin/Settings.php:161
+#: src/Admin/Settings.php:183
 msgid ""
 "Short reassurance shown above the badges. Keep it under a line so it reads "
-"at a glance; leave it empty to show the icons on their own."
+"at a glance; leave it empty to use the wording shown in the field, "
+"translated into your site language."
 msgstr ""
-"Krótkie zapewnienie pokazane nad plakietkami. Trzymaj go pod linią, aby "
-"można było go przeczytać na pierwszy rzut oka; pozostaw to pole puste, aby "
-"wyświetlić ikony samodzielnie."
 
-#: src/Admin/Settings.php:172
-msgid "Guaranteed safe checkout"
-msgstr "Gwarancja bezpiecznej kasy"
-
-#: src/Admin/Settings.php:180
+#: src/Admin/Settings.php:200
 msgid "Icon colour"
 msgstr "Kolor ikon"
 
-#: src/Admin/Settings.php:184
+#: src/Admin/Settings.php:204
 msgid ""
 "Tints the icons and heading. Pick a shade that stays readable against your "
 "product page background, a dark slate or your brand colour usually works "
@@ -150,11 +208,11 @@ msgstr ""
 "strony produktu, ciemny grafit lub kolor Twojej marki zazwyczaj sprawdzają "
 "się najlepiej."
 
-#: src/Admin/Settings.php:192
+#: src/Admin/Settings.php:212
 msgid "Badges"
 msgstr "Odznaki"
 
-#: src/Admin/Settings.php:193
+#: src/Admin/Settings.php:213
 msgid ""
 "Choose which bundled badges to show. They are safe inline graphics, no "
 "external requests and no third-party logos."
@@ -162,7 +220,7 @@ msgstr ""
 "Wybierz, które dołączone odznaki wyświetlać. Są to bezpieczne grafiki "
 "osadzone bezpośrednio, bez żądań zewnętrznych i bez logo firm trzecich."
 
-#: src/Admin/Settings.php:196
+#: src/Admin/Settings.php:216
 msgid "Bundled badges"
 msgstr "Dołączone odznaki"
 
@@ -206,69 +264,57 @@ msgstr "Ochrona prywatności"
 msgid "Satisfaction (thumbs up)"
 msgstr "Satysfakcja (kciuk w górę)"
 
-#: fidindo.php:47
-msgid "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
-msgstr "Trust - Odznaki zaufania dla WooCommerce wymaga aktywnego WooCommerce."
+#: src/Service/Texts.php:33
+msgid "Guaranteed safe checkout"
+msgstr "Gwarancja bezpiecznej kasy"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Wkrótce"
+#~ msgid "Trust - Trust Badges for WooCommerce"
+#~ msgstr "Trust - Odznaki zaufania dla WooCommerce"
 
-#: src/Admin/ProUpsell.php:78
-msgid "Coming soon"
-msgstr "Wkrótce"
+#~ msgid "https://plogins.com/trust/"
+#~ msgstr "https://plogins.com/trust/"
 
-#. translators: %d: yearly price in PLN
-#: src/Admin/ProUpsell.php:83
+#~ msgid "WPPoland"
+#~ msgstr "WPPoland"
+
+#~ msgid "https://plogins.com/"
+#~ msgstr "https://plogins.com/"
+
+#~ msgid ""
+#~ "Trust shows a row of secure-checkout badges with a short heading after "
+#~ "the add-to-cart button. Pick the badges, write the heading and choose the "
+#~ "colour."
+#~ msgstr ""
+#~ "Trust wyświetla rząd odznak bezpiecznych płatności z krótkim nagłówkiem "
+#~ "pod przyciskiem dodawania do koszyka. Wybierz odznaki, wpisz nagłówek i "
+#~ "ustaw kolor."
+
+#~ msgid ""
+#~ "Trust works out of the box: leaving everything at its defaults shows four "
+#~ "secure-checkout badges under the add-to-cart button. Adjust below only if "
+#~ "you want to change what appears or where."
+#~ msgstr ""
+#~ "Trust działa od razu: pozostawienie wszystkiego w ustawieniach domyślnych "
+#~ "powoduje wyświetlenie czterech plakietek bezpiecznej płatności pod "
+#~ "przyciskiem Dodaj do koszyka. Dostosuj poniżej tylko wtedy, gdy chcesz "
+#~ "zmienić to, co i gdzie się pojawia."
+
+#~ msgid ""
+#~ "Short reassurance shown above the badges. Keep it under a line so it "
+#~ "reads at a glance; leave it empty to show the icons on their own."
+#~ msgstr ""
+#~ "Krótkie zapewnienie pokazane nad plakietkami. Trzymaj go pod linią, aby "
+#~ "można było go przeczytać na pierwszy rzut oka; pozostaw to pole puste, "
+#~ "aby wyświetlić ikony samodzielnie."
+
+#~ msgid ""
+#~ "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
+#~ msgstr ""
+#~ "Trust - Odznaki zaufania dla WooCommerce wymaga aktywnego WooCommerce."
+
 #, php-format
-msgid "od %d zł/rok"
-msgstr "od %d zł/rok"
-
-#. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:88
-#, php-format
-msgid "from %1$s%2$d/yr"
-msgstr "od %1$s%2$d/rok"
-
-#: src/Admin/ProUpsell.php:97
-msgid "Upgrade to PRO"
-msgstr "Przejdź na PRO"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Powiadom mnie"
-msgstr "Powiadom mnie"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Get notified"
-msgstr "Powiadom mnie"
-
-#: src/Admin/ProUpsell.php:128
-msgid "Permission denied."
-msgstr "Brak uprawnień."
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:158
-#, php-format
-msgid "Do more with %s"
-msgstr "Zrób więcej dzięki %s"
-
-#: src/Admin/ProUpsell.php:165
-msgid "Dismiss this notice"
-msgstr "Odrzuć to powiadomienie"
-
-#: src/Admin/ProUpsell.php:182
-msgid "Unlock every PRO feature"
-msgstr "Odblokuj wszystkie funkcje PRO"
-
-#: src/Admin/ProUpsell.php:195
-msgid "one licence, every PRO feature"
-msgstr "jedna licencja, wszystkie funkcje PRO"
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:214
-#, php-format
-msgid "What %s adds"
-msgstr "Co dodaje %s"
+#~ msgid "od %d zł/rok"
+#~ msgstr "od %d zł/rok"
 
 #~ msgid "General"
 #~ msgstr "Ogólne"
