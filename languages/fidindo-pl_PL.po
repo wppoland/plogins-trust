@@ -20,12 +20,12 @@ msgstr ""
 #. Plugin Name of the plugin
 #: fidindo.php
 msgid "Fidindo - Trust Badges for WooCommerce"
-msgstr ""
+msgstr "Fidindo - odznaki zaufania dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: fidindo.php
 msgid "https://plogins.com/plogins-trust/"
-msgstr ""
+msgstr "https://plogins.com/plogins-trust/"
 
 #. Description of the plugin
 #: fidindo.php
@@ -39,17 +39,17 @@ msgstr ""
 #. Author of the plugin
 #: fidindo.php
 msgid "WPPoland.com"
-msgstr ""
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: fidindo.php
 msgid "https://wppoland.com"
-msgstr ""
+msgstr "https://wppoland.com"
 
 #: fidindo.php:48
 msgid ""
 "Fidindo - Trust Badges for WooCommerce requires WooCommerce to be active."
-msgstr ""
+msgstr "Fidindo - odznaki zaufania dla WooCommerce wymaga aktywnego WooCommerce."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
@@ -121,7 +121,7 @@ msgstr "Zapewnij kupujących o bezpieczeństwie w chwili decyzji o zakupie"
 msgid ""
 "Fidindo shows a row of secure-checkout badges with a short heading after the "
 "add-to-cart button. Pick the badges, write the heading and choose the colour."
-msgstr ""
+msgstr "Fidindo pokazuje rząd odznak bezpiecznych zakupów z krótkim nagłówkiem pod przyciskiem dodawania do koszyka. Wybierz odznaki, wpisz nagłówek i wybierz kolor."
 
 #: src/Admin/Settings.php:142
 msgid "Display"
@@ -132,7 +132,7 @@ msgid ""
 "Fidindo works out of the box: leaving everything at its defaults shows four "
 "secure-checkout badges under the add-to-cart button. Adjust below only if "
 "you want to change what appears or where."
-msgstr ""
+msgstr "Fidindo działa od razu: pozostawienie wszystkiego na ustawieniach domyślnych pokazuje cztery odznaki bezpiecznych zakupów pod przyciskiem dodawania do koszyka. Dostosuj poniższe tylko wtedy, gdy chcesz zmienić to, co się pojawia, albo gdzie."
 
 #: src/Admin/Settings.php:147
 msgid "Enable trust badges"
@@ -173,15 +173,15 @@ msgstr ""
 
 #: src/Admin/Settings.php:167
 msgid "Show the heading"
-msgstr ""
+msgstr "Pokaż nagłówek"
 
 #: src/Admin/Settings.php:171
 msgid "Print a line of text above the badges."
-msgstr ""
+msgstr "Wyświetl linię tekstu nad odznakami."
 
 #: src/Admin/Settings.php:173
 msgid "Turn this off to show the icons on their own."
-msgstr ""
+msgstr "Wyłącz to, aby pokazać same ikony."
 
 #: src/Admin/Settings.php:178
 msgid "Heading"
@@ -192,7 +192,7 @@ msgid ""
 "Short reassurance shown above the badges. Keep it under a line so it reads "
 "at a glance; leave it empty to use the wording shown in the field, "
 "translated into your site language."
-msgstr ""
+msgstr "Krótkie zapewnienie pokazywane nad odznakami. Zmieść je w jednej linii, aby dało się je przeczytać w mgnieniu oka; pozostaw puste, aby użyć treści pokazanej w polu, przetłumaczonej na język Twojej witryny."
 
 #: src/Admin/Settings.php:200
 msgid "Icon colour"
