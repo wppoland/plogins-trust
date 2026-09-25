@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Fidindo Pro',
+    'name'       => 'Badgevo Pro',
     'url'        => 'https://plogins.com/plogins-trust-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,

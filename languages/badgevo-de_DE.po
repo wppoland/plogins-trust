@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Trust - Trust Badges for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/fidindo\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/badgevo\n"
 "POT-Creation-Date: 2026-09-08T13:44:43+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:23:40+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
@@ -13,21 +13,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: fidindo\n"
+"X-Domain: badgevo\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: fidindo.php
-msgid "Fidindo - Trust Badges for WooCommerce"
+#: badgevo.php
+msgid "Badgevo - Trust Badges for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: fidindo.php
+#: badgevo.php
 msgid "https://plogins.com/plogins-trust/"
 msgstr ""
 
 #. Description of the plugin
-#: fidindo.php
+#: badgevo.php
 msgid ""
 "Show trust and secure-checkout badges to boost buyer confidence and "
 "conversions."
@@ -36,18 +36,18 @@ msgstr ""
 "und die Conversions zu steigern."
 
 #. Author of the plugin
-#: fidindo.php
+#: badgevo.php
 msgid "WPPoland.com"
 msgstr ""
 
 #. Author URI of the plugin
-#: fidindo.php
+#: badgevo.php
 msgid "https://wppoland.com"
 msgstr ""
 
-#: fidindo.php:48
+#: badgevo.php:48
 msgid ""
-"Fidindo - Trust Badges for WooCommerce requires WooCommerce to be active."
+"Badgevo - Trust Badges for WooCommerce requires WooCommerce to be active."
 msgstr ""
 
 #: src/Admin/ProUpsell.php:78
@@ -118,7 +118,7 @@ msgstr "Beruhige Käufer in dem Moment, in dem sie sich zum Kauf entscheiden"
 
 #: src/Admin/Settings.php:134
 msgid ""
-"Fidindo shows a row of secure-checkout badges with a short heading after the "
+"Badgevo shows a row of secure-checkout badges with a short heading after the "
 "add-to-cart button. Pick the badges, write the heading and choose the colour."
 msgstr ""
 
@@ -128,7 +128,7 @@ msgstr "Anzeige"
 
 #: src/Admin/Settings.php:143
 msgid ""
-"Fidindo works out of the box: leaving everything at its defaults shows four "
+"Badgevo works out of the box: leaving everything at its defaults shows four "
 "secure-checkout badges under the add-to-cart button. Adjust below only if "
 "you want to change what appears or where."
 msgstr ""
