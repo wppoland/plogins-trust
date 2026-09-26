@@ -50,9 +50,9 @@ Strona ustawień w menu WooCommerce pozwala:
 
 == Installation ==
 
-1. Prześlij wtyczkę do `/wp-content/plugins/trust` lub zainstaluj przez Wtyczki → Dodaj nową.
+1. Prześlij wtyczkę do `/wp-content/plugins/trust` lub zainstaluj przez Wtyczki > Dodaj nową.
 2. Włącz ją. WooCommerce musi być zainstalowane i aktywne.
-3. Wejdź w <strong>WooCommerce → Trust Badges</strong>, aby wybrać plakietki, nagłówek i kolor.
+3. Wejdź w <strong>WooCommerce > Trust Badges</strong>, aby wybrać plakietki, nagłówek i kolor.
 
 == Frequently Asked Questions ==
 

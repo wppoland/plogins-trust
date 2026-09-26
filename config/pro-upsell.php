@@ -10,12 +10,11 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Trust Pro',
+    'name'       => 'Badgevo Pro',
     'url'        => 'https://plogins.com/plogins-trust-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',
-    'price_pln'  => 85,
     'lead'       => [
         'en' => 'Sticky trust bar, badge schedules, per-product badge sets, badge analytics and expanded badge library ship in version 0.5.0.',
         'pl' => 'Przyklejony pasek, harmonogramy, zestawy per produkt, analityka wyświetleń i rozszerzona biblioteka odznak są dostępne w wydaniu 0.5.0.',
@@ -30,16 +29,16 @@ return [
             'pl' => ['title' => 'Harmonogramy odznak', 'desc' => 'Pokazywanie odznak w zakresie dat, z automatycznym powrotem (dla rzędu i paska).'],
         ],
         [
-            'en' => ['title' => 'Per-product badge sets', 'desc' => 'Choose a custom badge list on the product General tab for the Trust row and sticky bar on that product page.'],
-            'pl' => ['title' => 'Zestawy odznak per produkt', 'desc' => 'Wybierz własny zestaw odznak w zakładce Ogólne produktu dla rzędu Trust i paska na tej karcie.'],
+            'en' => ['title' => 'Per-product badge sets', 'desc' => 'Choose a custom badge list on the product General tab for the badge row and sticky bar on that product page.'],
+            'pl' => ['title' => 'Zestawy odznak per produkt', 'desc' => 'Wybierz własny zestaw odznak w zakładce Ogólne produktu dla rzędu odznak i paska na tej karcie.'],
         ],
         [
             'en' => ['title' => 'Badge impression analytics', 'desc' => 'Lightweight per-badge view counters via trust/badges_rendered (shipped).'],
             'pl' => ['title' => 'Analityka wyświetleń odznak', 'desc' => 'Lekkie liczniki wyświetleń per odznaka przez trust/badges_rendered (wdrożone).'],
         ],
         [
-            'en' => ['title' => 'PRO settings', 'desc' => 'Configure the sticky bar and display schedules under WooCommerce → Trust Bar (Pro).'],
-            'pl' => ['title' => 'Ustawienia PRO', 'desc' => 'Skonfiguruj przyklejony pasek i harmonogramy w WooCommerce → Trust Bar (Pro).'],
+            'en' => ['title' => 'PRO settings', 'desc' => 'Configure the sticky bar and display schedules under WooCommerce > Trust Bar (Pro).'],
+            'pl' => ['title' => 'Ustawienia PRO', 'desc' => 'Skonfiguruj przyklejony pasek i harmonogramy w WooCommerce > Trust Bar (Pro).'],
         ],
         [
             'en' => ['title' => 'Expanded badge library', 'desc' => '12 additional inline-SVG badges, curated preset sets and visual pickers (shipped).'],

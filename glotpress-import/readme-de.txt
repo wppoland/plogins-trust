@@ -50,9 +50,9 @@ Eine Einstellungsseite im WooCommerce-Menü ermöglicht dir:
 
 == Installation ==
 
-1. Lade das Plugin nach `/wp-content/plugins/trust` hoch oder installiere es über Plugins → Installieren.
+1. Lade das Plugin nach `/wp-content/plugins/trust` hoch oder installiere es über Plugins > Installieren.
 2. Aktiviere es. WooCommerce muss installiert und aktiv sein.
-3. Öffne <strong>WooCommerce → Trust Badges</strong>, um deine Badges, Überschrift und Farbe auszuwählen.
+3. Öffne <strong>WooCommerce > Trust Badges</strong>, um deine Badges, Überschrift und Farbe auszuwählen.
 
 == Frequently Asked Questions ==
 

@@ -25,6 +25,9 @@ final class BadgesService implements HasHooks
     /** A `[trust_badges]` shortcode renders the group anywhere. */
     private const SHORTCODE = 'trust_badges';
 
+    /** The icon colour is attached to the stylesheet once per request. */
+    private bool $colorAttached = false;
+
     public function registerHooks(): void
     {
         $settings = $this->settings();
@@ -61,6 +64,14 @@ final class BadgesService implements HasHooks
         // and enqueue on demand from renderRow() when the row actually prints.
         if (! $needed) {
             wp_register_style('trust-badges', \TRUST_URL . 'assets/css/badges.css', [], \Trust\VERSION);
+            // Attach the colour to the registration too, not only to the product
+            // page enqueue below. Merchants who unticked "show on product pages" and placed
+            // the shortcode in a footer picked a colour here and got the
+            // stylesheet's fallback green on the storefront: the row printed,
+            // but --trust-seal was only ever written on the product-page path.
+            // Inline styles added to a registered handle print with the sheet
+            // whenever the shortcode enqueues it.
+            $this->printInlineColor();
             return;
         }
 
@@ -110,8 +121,14 @@ final class BadgesService implements HasHooks
             $this->printInlineColor();
         }
 
+        // An unticked "show heading" prints the icons on their own; the template
+        // skips an empty heading.
+        $heading = empty($settings['show_heading'])
+            ? ''
+            : (string) ($settings['heading'] ?? '');
+
         $context = [
-            'heading'   => (string) ($settings['heading'] ?? ''),
+            'heading'   => $heading,
             'items'     => $items,
             'placement' => $placement,
         ];
@@ -166,11 +183,17 @@ final class BadgesService implements HasHooks
      */
     private function printInlineColor(): void
     {
+        if ($this->colorAttached) {
+            return;
+        }
+
         $color = $this->sanitizeColor((string) ($this->settings()['icon_color'] ?? ''));
 
         if ($color === '') {
             return;
         }
+
+        $this->colorAttached = true;
 
         // Override the seal token so the whole strip (ink, paper ground,
         // engraved rule and the lead-seal ring) re-themes from one colour.
@@ -188,7 +211,8 @@ final class BadgesService implements HasHooks
     }
 
     /**
-     * Stored settings merged over packaged defaults.
+     * Stored settings merged over packaged defaults, with customer-facing text
+     * resolved for display.
      *
      * @return array<string, mixed>
      */
@@ -203,7 +227,11 @@ final class BadgesService implements HasHooks
         /** @var array<string, mixed> $defaults */
         $defaults = require \TRUST_DIR . 'config/defaults.php';
 
-        return array_merge($defaults, $stored);
+        // Texts::apply() fills an empty heading with its translated default on
+        // the way out, where it is about to be printed. It is never written
+        // back: storing the resolved string would freeze one language into the
+        // option, which is the bug it exists to fix.
+        return Texts::apply(array_merge($defaults, $stored));
     }
 
     /**

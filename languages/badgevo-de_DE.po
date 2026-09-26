@@ -1,0 +1,317 @@
+# Copyright (C) 2026 WPPoland
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Trust - Trust Badges for WooCommerce 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/badgevo\n"
+"POT-Creation-Date: 2026-09-08T13:44:43+00:00\n"
+"PO-Revision-Date: 2026-06-16T20:23:40+00:00\n"
+"Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
+"Language-Team: German <de@li.org>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: badgevo\n"
+"X-Generator: WP-CLI 2.12.0\n"
+
+#. Plugin Name of the plugin
+#: badgevo.php
+msgid "Badgevo - Trust Badges for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: badgevo.php
+msgid "https://plogins.com/plogins-trust/"
+msgstr ""
+
+#. Description of the plugin
+#: badgevo.php
+msgid ""
+"Show trust and secure-checkout badges to boost buyer confidence and "
+"conversions."
+msgstr ""
+"Zeige Vertrauen und sichere Checkout-Abzeichen, um das Vertrauen der Käufer "
+"und die Conversions zu steigern."
+
+#. Author of the plugin
+#: badgevo.php
+msgid "WPPoland.com"
+msgstr ""
+
+#. Author URI of the plugin
+#: badgevo.php
+msgid "https://wppoland.com"
+msgstr ""
+
+#: badgevo.php:48
+msgid ""
+"Badgevo - Trust Badges for WooCommerce requires WooCommerce to be active."
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Demnächst"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Demnächst"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "ab %1$s%2$d/Jahr"
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr "Auf PRO upgraden"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr "Mehr erreichen mit %s"
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr "Alle PRO-Funktionen freischalten"
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr "eine Lizenz, alle PRO-Funktionen"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr "Was %s ergänzt"
+
+#: src/Admin/Settings.php:55
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: src/Admin/Settings.php:67 src/Admin/Settings.php:68
+msgid "Trust Badges"
+msgstr "Vertrauensabzeichen"
+
+#: src/Admin/Settings.php:133
+msgid "Reassure shoppers at the moment they decide to buy"
+msgstr "Beruhige Käufer in dem Moment, in dem sie sich zum Kauf entscheiden"
+
+#: src/Admin/Settings.php:134
+msgid ""
+"Badgevo shows a row of secure-checkout badges with a short heading after the "
+"add-to-cart button. Pick the badges, write the heading and choose the colour."
+msgstr ""
+
+#: src/Admin/Settings.php:142
+msgid "Display"
+msgstr "Anzeige"
+
+#: src/Admin/Settings.php:143
+msgid ""
+"Badgevo works out of the box: leaving everything at its defaults shows four "
+"secure-checkout badges under the add-to-cart button. Adjust below only if "
+"you want to change what appears or where."
+msgstr ""
+
+#: src/Admin/Settings.php:147
+msgid "Enable trust badges"
+msgstr "Aktiviere Vertrauensabzeichen"
+
+#: src/Admin/Settings.php:151
+msgid "Show the trust-badge row on the storefront."
+msgstr "Zeige die Zeile mit den Vertrauensabzeichen im Shop an."
+
+#: src/Admin/Settings.php:153
+msgid ""
+"When off, no badges and no stylesheet load anywhere, the storefront is "
+"completely unaffected."
+msgstr ""
+"Wenn diese Option deaktiviert ist, werden nirgendwo Abzeichen und "
+"Stylesheets geladen, die Storefront bleibt völlig unberührt."
+
+#: src/Admin/Settings.php:157
+msgid "Show on product pages"
+msgstr "Auf Produktseiten anzeigen"
+
+#: src/Admin/Settings.php:161
+msgid ""
+"Show the badge row after the add-to-cart button on single product pages."
+msgstr ""
+"Zeige die Badge-Zeile nach der Schaltfläche „In den Warenkorb“ auf einzelnen "
+"Produktseiten an."
+
+#: src/Admin/Settings.php:163
+msgid ""
+"Turn this off to keep the badges out of the product template and place them "
+"yourself with the [trust_badges] shortcode, for example inside a footer or a "
+"block."
+msgstr ""
+"Deaktiviere diese Option, um die Abzeichen aus der Produktvorlage "
+"herauszuhalten und sie selbst mit dem Shortcode [trust_badges] zu "
+"platzieren, beispielsweise in einer Fußzeile oder einem Block."
+
+#: src/Admin/Settings.php:167
+msgid "Show the heading"
+msgstr ""
+
+#: src/Admin/Settings.php:171
+msgid "Print a line of text above the badges."
+msgstr ""
+
+#: src/Admin/Settings.php:173
+msgid "Turn this off to show the icons on their own."
+msgstr ""
+
+#: src/Admin/Settings.php:178
+msgid "Heading"
+msgstr "Überschrift"
+
+#: src/Admin/Settings.php:183
+msgid ""
+"Short reassurance shown above the badges. Keep it under a line so it reads "
+"at a glance; leave it empty to use the wording shown in the field, "
+"translated into your site language."
+msgstr ""
+
+#: src/Admin/Settings.php:200
+msgid "Icon colour"
+msgstr "Symbolfarbe"
+
+#: src/Admin/Settings.php:204
+msgid ""
+"Tints the icons and heading. Pick a shade that stays readable against your "
+"product page background, a dark slate or your brand colour usually works "
+"best."
+msgstr ""
+"Tönt die Symbole und Überschriften. Wähle einen Farbton, der vor dem "
+"Hintergrund deiner Produktseite gut lesbar bleibt. Eine dunkle Schieferfarbe "
+"oder deine Markenfarbe funktioniert normalerweise am besten."
+
+#: src/Admin/Settings.php:212
+msgid "Badges"
+msgstr "Abzeichen"
+
+#: src/Admin/Settings.php:213
+msgid ""
+"Choose which bundled badges to show. They are safe inline graphics, no "
+"external requests and no third-party logos."
+msgstr ""
+"Wähle aus, welche gebündelten Abzeichen angezeigt werden sollen. Es handelt "
+"sich um sichere Inline-Grafiken, keine externen Anforderungen und keine "
+"Logos Dritter."
+
+#: src/Admin/Settings.php:216
+msgid "Bundled badges"
+msgstr "Gebündelte Abzeichen"
+
+#: src/Badges/BadgeLibrary.php:43
+msgid "Secure checkout (lock)"
+msgstr "Sichere Kasse (Schloss)"
+
+#: src/Badges/BadgeLibrary.php:47
+msgid "SSL encrypted"
+msgstr "SSL-verschlüsselt"
+
+#: src/Badges/BadgeLibrary.php:51
+msgid "Money-back guarantee"
+msgstr "Geld-zurück-Garantie"
+
+#: src/Badges/BadgeLibrary.php:55
+msgid "Verified / trusted store"
+msgstr "Verifizierter / vertrauenswürdiger Shop"
+
+#: src/Badges/BadgeLibrary.php:59
+msgid "Free shipping (truck)"
+msgstr "Kostenloser Versand (LKW)"
+
+#: src/Badges/BadgeLibrary.php:63
+msgid "Card payment"
+msgstr "Kartenzahlung"
+
+#: src/Badges/BadgeLibrary.php:67
+msgid "Digital wallet"
+msgstr "Digitale Geldbörse"
+
+#: src/Badges/BadgeLibrary.php:71
+msgid "24/7 support (headset)"
+msgstr "24/7-Support (Headset)"
+
+#: src/Badges/BadgeLibrary.php:75
+msgid "Privacy protected"
+msgstr "Privatsphäre geschützt"
+
+#: src/Badges/BadgeLibrary.php:79
+msgid "Satisfaction (thumbs up)"
+msgstr "Zufriedenheit (Daumen hoch)"
+
+#: src/Service/Texts.php:33
+msgid "Guaranteed safe checkout"
+msgstr "Garantiert sichere Kaufabwicklung"
+
+#~ msgid "Trust - Trust Badges for WooCommerce"
+#~ msgstr "Vertrauen, Vertrauensabzeichen für WooCommerce"
+
+#~ msgid "https://plogins.com/trust/"
+#~ msgstr "https://plogins.com/de/trust/"
+
+#~ msgid "WPPoland"
+#~ msgstr "WPPoland"
+
+#~ msgid "https://plogins.com/"
+#~ msgstr "https://plogins.com/"
+
+#~ msgid ""
+#~ "Trust shows a row of secure-checkout badges with a short heading after "
+#~ "the add-to-cart button. Pick the badges, write the heading and choose the "
+#~ "colour."
+#~ msgstr ""
+#~ "Trust zeigt eine Reihe von Secure-Checkout-Badges mit einer kurzen "
+#~ "Überschrift nach der Schaltfläche „In den Warenkorb“ an. Wähle die "
+#~ "Abzeichen aus, schreibe die Überschrift und wähle die Farbe."
+
+#~ msgid ""
+#~ "Trust works out of the box: leaving everything at its defaults shows four "
+#~ "secure-checkout badges under the add-to-cart button. Adjust below only if "
+#~ "you want to change what appears or where."
+#~ msgstr ""
+#~ "Trust funktioniert sofort: Wenn du alles auf den Standardeinstellungen "
+#~ "belässt, werden unter der Schaltfläche „Zum Warenkorb hinzufügen“ vier "
+#~ "Abzeichen für den sicheren Checkout angezeigt. Passe unten nur an, wenn "
+#~ "du ändern möchtest, was angezeigt wird oder wo."
+
+#~ msgid ""
+#~ "Short reassurance shown above the badges. Keep it under a line so it "
+#~ "reads at a glance; leave it empty to show the icons on their own."
+#~ msgstr ""
+#~ "Kurze Bestätigung über den Abzeichen. Halte es unter einer Zeile, damit "
+#~ "du es auf einen Blick lesen können. Lass es leer, um die Symbole einzeln "
+#~ "anzuzeigen."
+
+#~ msgid ""
+#~ "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."
+#~ msgstr ""
+#~ "Trust, Trust Badges für WooCommerce erfordert, dass WooCommerce aktiv ist."
+
+#, php-format
+#~ msgid "od %d zł/rok"
+#~ msgstr "ab %d zł/Jahr"
