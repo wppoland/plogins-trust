@@ -120,6 +120,12 @@ final class Settings implements HasHooks
         <div class="wrap trust-admin">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
 
+            <?php
+            // Pages outside the Settings menu never get options-head.php, so the
+            // "Settings saved." notice options.php queued has to be printed here.
+            settings_errors();
+            ?>
+
             <?php $this->proUpsell()->banner(); ?>
 
             <div class="trust-admin__intro">
