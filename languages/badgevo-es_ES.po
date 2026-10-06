@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Trust - Trust Badges for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/badgevo\n"
-"POT-Creation-Date: 2026-09-08T13:44:43+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trust\n"
+"POT-Creation-Date: 2026-10-05T20:59:06+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:23:40+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -19,12 +19,12 @@ msgstr ""
 #. Plugin Name of the plugin
 #: badgevo.php
 msgid "Badgevo - Trust Badges for WooCommerce"
-msgstr ""
+msgstr "Badgevo - Insignias de confianza para WooCommerce"
 
 #. Plugin URI of the plugin
 #: badgevo.php
 msgid "https://plogins.com/plogins-trust/"
-msgstr ""
+msgstr "https://plogins.com/plogins-trust/"
 
 #. Description of the plugin
 #: badgevo.php
@@ -38,41 +38,92 @@ msgstr ""
 #. Author of the plugin
 #: badgevo.php
 msgid "WPPoland.com"
-msgstr ""
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: badgevo.php
 msgid "https://wppoland.com"
-msgstr ""
+msgstr "https://wppoland.com"
 
 #: badgevo.php:48
 msgid ""
 "Badgevo - Trust Badges for WooCommerce requires WooCommerce to be active."
 msgstr ""
+"Badgevo - Insignias de confianza para WooCommerce necesita WooCommerce "
+"activo."
 
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Próximamente"
+#: config/pro-upsell.php:21
+msgid "Sticky trust bar"
+msgstr "Barra de confianza fija"
 
-#: src/Admin/ProUpsell.php:78
+#: config/pro-upsell.php:21
+msgid ""
+"A slim, fixed secure-checkout bar pinned to the bottom of single product "
+"pages with custom messages and colors."
+msgstr ""
+"Una barra estrecha y fija de pago seguro anclada al pie de las páginas de "
+"producto, con mensajes y colores propios."
+
+#: config/pro-upsell.php:22
+msgid "Badge schedules"
+msgstr "Programación de insignias"
+
+#: config/pro-upsell.php:22
+msgid ""
+"Show seasonal or campaign badges during date and time ranges, reverting "
+"automatically for both row and bar."
+msgstr ""
+"Muestra insignias de temporada o de campaña en rangos de fecha y hora, con "
+"vuelta automática tanto en la fila como en la barra."
+
+#: config/pro-upsell.php:23
+msgid "Per-product badge sets"
+msgstr "Conjuntos de insignias por producto"
+
+#: config/pro-upsell.php:23
+msgid ""
+"Choose a custom badge list on the product General tab for the badge row and "
+"sticky bar on that product page."
+msgstr ""
+"Elige una lista de insignias propia en la pestaña General del producto para "
+"la fila de insignias y la barra de esa página de producto."
+
+#: config/pro-upsell.php:24
+msgid "Badge impression analytics"
+msgstr "Estadísticas de impresiones de insignias"
+
+#: config/pro-upsell.php:24
+msgid ""
+"Per-badge view counters, split by placement, on their own report screen."
+msgstr ""
+"Contadores de vistas por insignia, separados por ubicación, en su propia "
+"pantalla de informe."
+
+#: config/pro-upsell.php:25
+msgid "Expanded badge library"
+msgstr "Biblioteca de insignias ampliada"
+
+#: config/pro-upsell.php:25
+msgid ""
+"12 additional inline-SVG badges, curated preset sets and visual pickers."
+msgstr ""
+"12 insignias SVG adicionales, conjuntos predefinidos y selectores visuales."
+
+#: src/Admin/ProUpsell.php:80
 msgid "Coming soon"
 msgstr "Próximamente"
 
 #. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:84
+#: src/Admin/ProUpsell.php:86
 #, php-format
 msgid "from %1$s%2$d/yr"
 msgstr "desde %1$s%2$d/año"
 
-#: src/Admin/ProUpsell.php:93
+#: src/Admin/ProUpsell.php:95
 msgid "Upgrade to PRO"
 msgstr "Mejora a PRO"
 
-#: src/Admin/ProUpsell.php:94
-msgid "Powiadom mnie"
-msgstr "Avísame"
-
-#: src/Admin/ProUpsell.php:94
+#: src/Admin/ProUpsell.php:96
 msgid "Get notified"
 msgstr "Avísame"
 
@@ -90,16 +141,16 @@ msgstr "Haz más con %s"
 msgid "Dismiss this notice"
 msgstr "Descartar este aviso"
 
-#: src/Admin/ProUpsell.php:178
+#: src/Admin/ProUpsell.php:183
 msgid "Unlock every PRO feature"
 msgstr "Desbloquea todas las funciones PRO"
 
-#: src/Admin/ProUpsell.php:191
+#: src/Admin/ProUpsell.php:196
 msgid "one licence, every PRO feature"
 msgstr "una licencia, todas las funciones PRO"
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:210
+#: src/Admin/ProUpsell.php:215
 #, php-format
 msgid "What %s adds"
 msgstr "Lo que añade %s"
@@ -112,36 +163,43 @@ msgstr "Ajustes"
 msgid "Trust Badges"
 msgstr "Insignias de confianza"
 
-#: src/Admin/Settings.php:133
+#: src/Admin/Settings.php:139
 msgid "Reassure shoppers at the moment they decide to buy"
 msgstr "Tranquilizar a los compradores en el momento en que deciden comprar"
 
-#: src/Admin/Settings.php:134
+#: src/Admin/Settings.php:140
 msgid ""
-"Badgevo shows a row of secure-checkout badges with a short heading after the "
-"add-to-cart button. Pick the badges, write the heading and choose the colour."
+"Badgevo shows a row of secure-checkout badges with a short heading after the"
+" add-to-cart button. Pick the badges, write the heading and choose the "
+"colour."
 msgstr ""
+"Badgevo muestra una fila de insignias de pago seguro con un título breve "
+"después del botón de añadir al carrito. Elige las insignias, escribe el "
+"título y elige el color."
 
-#: src/Admin/Settings.php:142
+#: src/Admin/Settings.php:148
 msgid "Display"
 msgstr "Mostrar"
 
-#: src/Admin/Settings.php:143
+#: src/Admin/Settings.php:149
 msgid ""
 "Badgevo works out of the box: leaving everything at its defaults shows four "
 "secure-checkout badges under the add-to-cart button. Adjust below only if "
 "you want to change what appears or where."
 msgstr ""
+"Badgevo funciona desde el primer momento: con los valores predeterminados "
+"muestra cuatro insignias de pago seguro bajo el botón de añadir al carrito. "
+"Ajusta lo de abajo solo si quieres cambiar qué aparece o dónde."
 
-#: src/Admin/Settings.php:147
+#: src/Admin/Settings.php:153
 msgid "Enable trust badges"
 msgstr "Habilitar insignias de confianza"
 
-#: src/Admin/Settings.php:151
+#: src/Admin/Settings.php:157
 msgid "Show the trust-badge row on the storefront."
 msgstr "Muestre la fila del distintivo de confianza en el escaparate."
 
-#: src/Admin/Settings.php:153
+#: src/Admin/Settings.php:159
 msgid ""
 "When off, no badges and no stylesheet load anywhere, the storefront is "
 "completely unaffected."
@@ -149,69 +207,72 @@ msgstr ""
 "Cuando está desactivado, no se cargan insignias ni hojas de estilo en "
 "ninguna parte, el escaparate no se ve afectado en absoluto."
 
-#: src/Admin/Settings.php:157
+#: src/Admin/Settings.php:163
 msgid "Show on product pages"
 msgstr "Mostrar en las páginas de productos"
 
-#: src/Admin/Settings.php:161
+#: src/Admin/Settings.php:167
 msgid ""
 "Show the badge row after the add-to-cart button on single product pages."
 msgstr ""
 "Muestre la fila de la insignia después del botón Añadir al carrito en "
 "páginas de productos individuales."
 
-#: src/Admin/Settings.php:163
+#: src/Admin/Settings.php:169
 msgid ""
 "Turn this off to keep the badges out of the product template and place them "
-"yourself with the [trust_badges] shortcode, for example inside a footer or a "
-"block."
+"yourself with the [trust_badges] shortcode, for example inside a footer or a"
+" block."
 msgstr ""
 "Desactive esta opción para mantener las insignias fuera de la plantilla del "
 "producto y colóquelas tú mismo con el código corto [trust_badges], por "
 "ejemplo, dentro de un pie de página o un bloque."
 
-#: src/Admin/Settings.php:167
-msgid "Show the heading"
-msgstr ""
-
-#: src/Admin/Settings.php:171
-msgid "Print a line of text above the badges."
-msgstr ""
-
 #: src/Admin/Settings.php:173
-msgid "Turn this off to show the icons on their own."
-msgstr ""
+msgid "Show the heading"
+msgstr "Mostrar el título"
 
-#: src/Admin/Settings.php:178
+#: src/Admin/Settings.php:177
+msgid "Print a line of text above the badges."
+msgstr "Muestra una línea de texto encima de las insignias."
+
+#: src/Admin/Settings.php:179
+msgid "Turn this off to show the icons on their own."
+msgstr "Desactívalo para mostrar solo los iconos."
+
+#: src/Admin/Settings.php:184
 msgid "Heading"
 msgstr "Título"
 
-#: src/Admin/Settings.php:183
+#: src/Admin/Settings.php:189
 msgid ""
 "Short reassurance shown above the badges. Keep it under a line so it reads "
 "at a glance; leave it empty to use the wording shown in the field, "
 "translated into your site language."
 msgstr ""
+"Mensaje breve de confianza que aparece encima de las insignias. Que no pase "
+"de una línea para leerse de un vistazo; déjalo vacío para usar el texto que "
+"se ve en el campo, traducido al idioma de tu sitio."
 
-#: src/Admin/Settings.php:200
+#: src/Admin/Settings.php:206
 msgid "Icon colour"
 msgstr "Color del icono"
 
-#: src/Admin/Settings.php:204
+#: src/Admin/Settings.php:210
 msgid ""
 "Tints the icons and heading. Pick a shade that stays readable against your "
 "product page background, a dark slate or your brand colour usually works "
 "best."
 msgstr ""
 "Tiñe los iconos y el título. Elija un tono que se mantenga legible en el "
-"fondo de la página de su producto; una pizarra oscura o el color de su marca "
-"generalmente funcionan mejor."
+"fondo de la página de su producto; una pizarra oscura o el color de su marca"
+" generalmente funcionan mejor."
 
-#: src/Admin/Settings.php:212
+#: src/Admin/Settings.php:218
 msgid "Badges"
 msgstr "Insignias"
 
-#: src/Admin/Settings.php:213
+#: src/Admin/Settings.php:219
 msgid ""
 "Choose which bundled badges to show. They are safe inline graphics, no "
 "external requests and no third-party logos."
@@ -219,7 +280,7 @@ msgstr ""
 "Elija qué insignias incluidas mostrar. Son gráficos en línea seguros, sin "
 "solicitudes externas ni logotipos de terceros."
 
-#: src/Admin/Settings.php:216
+#: src/Admin/Settings.php:222
 msgid "Bundled badges"
 msgstr "Insignias empaquetadas"
 
@@ -267,6 +328,12 @@ msgstr "Satisfacción (pulgar arriba)"
 msgid "Guaranteed safe checkout"
 msgstr "Pago seguro garantizado"
 
+#~ msgid "Wkrótce"
+#~ msgstr "Próximamente"
+
+#~ msgid "Powiadom mnie"
+#~ msgstr "Avísame"
+
 #~ msgid "Trust - Trust Badges for WooCommerce"
 #~ msgstr "Confianza - Insignias de confianza para WooCommerce"
 
@@ -280,13 +347,13 @@ msgstr "Pago seguro garantizado"
 #~ msgstr "https://plogins.com/"
 
 #~ msgid ""
-#~ "Trust shows a row of secure-checkout badges with a short heading after "
-#~ "the add-to-cart button. Pick the badges, write the heading and choose the "
+#~ "Trust shows a row of secure-checkout badges with a short heading after the "
+#~ "add-to-cart button. Pick the badges, write the heading and choose the "
 #~ "colour."
 #~ msgstr ""
-#~ "Trust muestra una fila de insignias de pago seguro con un encabezado "
-#~ "corto después del botón Añadir al carrito. Elige las insignias, escribe "
-#~ "el título y elige el color."
+#~ "Trust muestra una fila de insignias de pago seguro con un encabezado corto "
+#~ "después del botón Añadir al carrito. Elige las insignias, escribe el título "
+#~ "y elige el color."
 
 #~ msgid ""
 #~ "Trust works out of the box: leaving everything at its defaults shows four "
@@ -299,12 +366,12 @@ msgstr "Pago seguro garantizado"
 #~ "aparece o dónde."
 
 #~ msgid ""
-#~ "Short reassurance shown above the badges. Keep it under a line so it "
-#~ "reads at a glance; leave it empty to show the icons on their own."
+#~ "Short reassurance shown above the badges. Keep it under a line so it reads "
+#~ "at a glance; leave it empty to show the icons on their own."
 #~ msgstr ""
-#~ "Breve tranquilidad que se muestra encima de las insignias. Manténgalo "
-#~ "debajo de una línea para que se lea de un vistazo; déjelo vacío para "
-#~ "mostrar los íconos solos."
+#~ "Breve tranquilidad que se muestra encima de las insignias. Manténgalo debajo"
+#~ " de una línea para que se lea de un vistazo; déjelo vacío para mostrar los "
+#~ "íconos solos."
 
 #~ msgid ""
 #~ "Trust - Trust Badges for WooCommerce requires WooCommerce to be active."

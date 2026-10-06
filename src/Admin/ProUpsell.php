@@ -74,11 +74,6 @@ final class ProUpsell
         return (string) apply_filters('trust/pro_url', $default);
     }
 
-    private function isPolish(): bool
-    {
-        return str_starts_with((string) get_locale(), 'pl');
-    }
-
     private function priceLabel(): string
     {
         if (! $this->sellable()) {
@@ -104,12 +99,10 @@ final class ProUpsell
     /** @return array<int, array{title: string, desc: string}> */
     private function features(): array
     {
-        $lang = $this->isPolish() ? 'pl' : 'en';
-        $out  = [];
+        $out = [];
         foreach ((array) ($this->data()['features'] ?? []) as $f) {
-            $x = is_array($f) ? ($f[$lang] ?? $f['en'] ?? null) : null;
-            if (is_array($x) && ! empty($x['title'])) {
-                $out[] = ['title' => (string) $x['title'], 'desc' => (string) ($x['desc'] ?? '')];
+            if (is_array($f) && ! empty($f['title'])) {
+                $out[] = ['title' => (string) $f['title'], 'desc' => (string) ($f['desc'] ?? '')];
             }
         }
         return $out;

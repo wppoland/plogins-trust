@@ -30,6 +30,10 @@ final class BadgesService implements HasHooks
 
     public function registerHooks(): void
     {
+        // Registered even when disabled: an unregistered shortcode prints as raw
+        // `[trust_badges]` text, and renderShortcode() returns '' when off.
+        add_shortcode(self::SHORTCODE, [$this, 'renderShortcode']);
+
         $settings = $this->settings();
 
         if (empty($settings['enabled'])) {
@@ -37,7 +41,6 @@ final class BadgesService implements HasHooks
         }
 
         add_action('wp_enqueue_scripts', [$this, 'enqueueAssets']);
-        add_shortcode(self::SHORTCODE, [$this, 'renderShortcode']);
 
         if (! empty($settings['show_on_product'])) {
             add_action('woocommerce_after_add_to_cart_form', [$this, 'renderProductRow']);
@@ -87,6 +90,10 @@ final class BadgesService implements HasHooks
     public function renderShortcode(mixed $atts): string
     {
         unset($atts); // No attributes today; the group reads the saved settings.
+
+        if (empty($this->settings()['enabled'])) {
+            return '';
+        }
 
         wp_enqueue_style('trust-badges', \TRUST_URL . 'assets/css/badges.css', [], \Trust\VERSION);
 

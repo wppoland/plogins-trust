@@ -4,7 +4,7 @@ Tags: woocommerce, trust badges, secure checkout, conversion, ecommerce
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -24,7 +24,7 @@ It is built to stay out of the way:
 * **Accessible.** Each badge has an accessible name and the row is marked up as a list. The small hover animation is skipped for visitors who set `prefers-reduced-motion`.
 * **Inherits your colour.** Set one colour and every badge follows it via `currentColor`.
 
-Badgevo is not yet on the WordPress.org directory. The source lives on GitHub at [github.com/wppoland/plogins-trust](https://github.com/wppoland/plogins-trust) if you want to read the code or report a bug.
+The source lives on GitHub at [github.com/wppoland/plogins-trust](https://github.com/wppoland/plogins-trust) if you want to read the code or report a bug.
 
 = Documentation and links =
 
@@ -95,6 +95,12 @@ Badgevo does not connect to any external services. Every badge is a bundled inli
 Badgevo is fully translatable and ships the `badgevo.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.4 =
+* Turning the plugin off no longer prints the raw [trust_badges] shortcode on pages that use it; the shortcode now renders nothing while the badges are disabled.
+* The settings screen shows the "Settings saved." confirmation after a save.
+* The PRO feature cards are translatable like the rest of the screen and no longer show internal notes or a menu path as a feature.
+* Deleting the plugin on a multisite network removes its settings from every site, not only the current one.
 
 = 1.1.3 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.
