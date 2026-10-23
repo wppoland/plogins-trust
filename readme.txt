@@ -4,18 +4,18 @@ Tags: woocommerce, trust badges, secure checkout, conversion, ecommerce
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.4
+Stable tag: 1.2.0
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Add a row of secure-checkout badges after the add-to-cart button to reassure shoppers about payment safety.
+Secure-checkout badges with short captions after the add-to-cart button and under Place order, so shoppers buy with confidence.
 
 == Description ==
 
 Badgevo shows a row of secure-checkout badges after the add-to-cart button, under a short heading like "Guaranteed safe checkout". The idea is simple: put a reminder that the store is safe right where the shopper decides whether to buy.
 
-The plugin includes ten hand-drawn inline SVG badges: secure checkout, SSL encrypted, money-back guarantee, verified store, free shipping, card payment, digital wallet, 24/7 support, privacy protected and satisfaction. You pick which ones to show, write the heading (or turn the heading off for icons only) and set the icon colour.
+The plugin includes ten hand-drawn inline SVG badges: secure checkout, SSL encrypted, money-back guarantee, verified store, free shipping, card payment, digital wallet, 24/7 support, privacy protected and satisfaction. You pick which ones to show, write the heading (or turn the heading off), choose whether a short caption such as "Secure checkout" prints under each icon, and set the icon colour.
 
 It is built to stay out of the way:
 
@@ -37,6 +37,7 @@ The source lives on GitHub at [github.com/wppoland/plogins-trust](https://github
 = Where badges appear =
 
 * Single product page, after the add-to-cart button.
+* Checkout, if you turn it on: under the Place order button on the classic checkout, and under the checkout form (below Place order) with the Checkout block.
 * Anywhere via the `[trust_badges]` shortcode.
 
 = Settings =
@@ -46,6 +47,8 @@ A settings page under the WooCommerce menu lets you:
 * Enable or disable the badges.
 * Write the heading, or turn it off for icons only. Left empty, it uses the bundled wording in your site language.
 * Pick which bundled badges to show.
+* Show the row on checkout as well.
+* Show or hide the caption under each badge.
 * Choose the icon colour.
 
 == Installation ==
@@ -74,7 +77,7 @@ Yes. Use the `[trust_badges]` shortcode to render the row anywhere shortcodes ar
 
 = Which badges are included? =
 
-A curated set of inline SVG icons (secure checkout, shipping, returns and similar). Choose which to show in settings.
+Ten inline SVG badges: secure checkout, SSL encrypted, money-back guarantee, verified store, free shipping, card payments, digital wallets, 24/7 support, privacy protected and satisfaction guaranteed. Choose which to show in settings.
 
 
 = Does this plugin work on WordPress Multisite? =
@@ -85,6 +88,7 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 1. The trust-badge row beneath the add-to-cart button on a single product page.
 2. The Badgevo settings screen for badges.
+3. The badge row with captions under the Place order button on checkout.
 
 == External Services ==
 
@@ -95,6 +99,12 @@ Badgevo does not connect to any external services. Every badge is a bundled inli
 Badgevo is fully translatable and ships the `badgevo.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.2.0 =
+* New: "Show on checkout" setting. The badge row appears under the Place order button on the classic checkout, and under the checkout form with the Checkout block. Off by default.
+* New: a short caption under each badge, such as "Secure checkout", in the site language. It is also what screen readers hear, so the icon is no longer announced separately. On for new installs; stores updating from an earlier version keep their icon-only row until they tick "Show captions".
+* Screen readers now hear the shopper caption instead of the settings-screen description, which read "Secure checkout (lock)".
+* Fixed: the FAQ listed a returns badge, which this plugin does not include.
 
 = 1.1.4 =
 * Turning the plugin off no longer prints the raw [trust_badges] shortcode on pages that use it; the shortcode now renders nothing while the badges are disabled.

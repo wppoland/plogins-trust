@@ -170,6 +170,26 @@ final class Settings implements HasHooks
                                 </td>
                             </tr>
                             <tr>
+                                <th scope="row"><?php esc_html_e('Show on checkout', 'badgevo'); ?></th>
+                                <td>
+                                    <label for="trust_show_on_checkout">
+                                        <input type="checkbox" id="trust_show_on_checkout" name="<?php echo esc_attr(self::OPTION); ?>[show_on_checkout]" value="1" <?php checked((bool) ($settings['show_on_checkout'] ?? false), true); ?> />
+                                        <?php esc_html_e('Show the badge row on checkout, near the Place order button.', 'badgevo'); ?>
+                                    </label>
+                                    <p class="description"><?php esc_html_e('On the classic checkout it sits under the button. With the Checkout block it sits under the checkout form, below the button.', 'badgevo'); ?></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><?php esc_html_e('Show captions', 'badgevo'); ?></th>
+                                <td>
+                                    <label for="trust_show_captions">
+                                        <input type="checkbox" id="trust_show_captions" name="<?php echo esc_attr(self::OPTION); ?>[show_captions]" value="1" <?php checked((bool) ($settings['show_captions'] ?? false), true); ?> />
+                                        <?php esc_html_e('Print a short caption under each badge, such as "Secure checkout".', 'badgevo'); ?>
+                                    </label>
+                                    <p class="description"><?php esc_html_e('Turn this off for icons only. Screen readers hear the same caption either way.', 'badgevo'); ?></p>
+                                </td>
+                            </tr>
+                            <tr>
                                 <th scope="row"><?php esc_html_e('Show the heading', 'badgevo'); ?></th>
                                 <td>
                                     <label for="trust_show_heading">
@@ -312,6 +332,8 @@ final class Settings implements HasHooks
             'show_heading'    => ! empty($raw['show_heading']),
             'badges'          => $badges,
             'show_on_product' => ! empty($raw['show_on_product']),
+            'show_on_checkout' => ! empty($raw['show_on_checkout']),
+            'show_captions'   => ! empty($raw['show_captions']),
             'icon_color'      => $color,
         ]);
 

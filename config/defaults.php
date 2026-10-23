@@ -37,6 +37,14 @@ return [
     // Show the row after the add-to-cart button on single product pages.
     'show_on_product' => true,
 
+    // Show the row under Place order on the classic checkout and after the
+    // Checkout block. Opt-in, so an update never changes a live checkout.
+    'show_on_checkout' => false,
+
+    // Print a short caption under each icon. On for new installs; the Migrator
+    // turns it off for stores that already had the icon-only row.
+    'show_captions' => true,
+
     // Colour applied to the bundled SVG icons and heading.
     'icon_color' => '#3c4858',
 

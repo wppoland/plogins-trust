@@ -35,6 +35,7 @@ final class Migrator
 
         $this->seedDefaultSettings();
         $this->clearUntranslatableTexts();
+        $this->keepIconOnlyRow();
 
         update_option(self::OPTION, VERSION, false);
     }
@@ -85,6 +86,24 @@ final class Migrator
             // to make.
             update_option(self::SETTINGS, $stored, null);
         }
+    }
+
+    /**
+     * Captions arrived in 1.2.0 and default to on. A store saved before that
+     * had an icon-only row, so record captions as off there and its storefront
+     * does not change. A fresh install was seeded with the default just before
+     * this runs, so the key is already present and captions stay on.
+     */
+    private function keepIconOnlyRow(): void
+    {
+        $stored = get_option(self::SETTINGS, null);
+
+        if (! is_array($stored) || array_key_exists('show_captions', $stored)) {
+            return;
+        }
+
+        $stored['show_captions'] = false;
+        update_option(self::SETTINGS, $stored, null);
     }
 
     /**

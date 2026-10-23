@@ -14,8 +14,8 @@ defined('ABSPATH') || exit;
  *
  * Pure presentation: it reads the merchant's settings, builds the list of
  * bundled inline-SVG badges to show and prints an accessible, CSS-only group
- * after the add-to-cart button on single product pages (and anywhere via the
- * `[trust_badges]` shortcode). It never makes external requests and renders
+ * after the add-to-cart button on single product pages, next to Place order on
+ * checkout (and anywhere via the `[trust_badges]` shortcode). It never makes external requests and renders
  * nothing when disabled or when no badges are selected (no broken output).
  */
 final class BadgesService implements HasHooks
@@ -45,11 +45,44 @@ final class BadgesService implements HasHooks
         if (! empty($settings['show_on_product'])) {
             add_action('woocommerce_after_add_to_cart_form', [$this, 'renderProductRow']);
         }
+
+        if (! empty($settings['show_on_checkout'])) {
+            // Classic checkout: inside the payment box, under the Place order
+            // button. WooCommerce re-renders that box on every checkout update,
+            // and the hook fires again each time.
+            add_action('woocommerce_review_order_after_submit', [$this, 'renderCheckoutRow']);
+            add_filter('render_block', [$this, 'renderCheckoutBlock'], 10, 2);
+        }
     }
 
     public function renderProductRow(): void
     {
         $this->renderRow('product');
+    }
+
+    public function renderCheckoutRow(): void
+    {
+        $this->renderRow('checkout');
+    }
+
+    /**
+     * Checkout block: print the row right after the block. The block is a React
+     * app that replaces its inner markup, Place order included, so markup put
+     * inside it would not survive; just after it, the row sits under the
+     * checkout form and its Place order button.
+     *
+     * @param array<string, mixed> $block
+     */
+    public function renderCheckoutBlock(string $content, array $block): string
+    {
+        if (($block['blockName'] ?? '') !== 'woocommerce/checkout') {
+            return $content;
+        }
+
+        ob_start();
+        $this->renderRow('checkout');
+
+        return $content . (string) ob_get_clean();
     }
 
     /**
@@ -59,9 +92,8 @@ final class BadgesService implements HasHooks
     {
         $settings = $this->settings();
 
-        $needed = ! empty($settings['show_on_product'])
-            && function_exists('is_product')
-            && is_product();
+        $needed = (! empty($settings['show_on_product']) && function_exists('is_product') && is_product())
+            || (! empty($settings['show_on_checkout']) && function_exists('is_checkout') && is_checkout());
 
         // The shortcode can appear anywhere; register here so it is available,
         // and enqueue on demand from renderRow() when the row actually prints.
@@ -138,6 +170,7 @@ final class BadgesService implements HasHooks
             'heading'   => $heading,
             'items'     => $items,
             'placement' => $placement,
+            'captions'  => ! empty($settings['show_captions']),
         ];
 
         $this->renderTemplate('badges', $context);
@@ -147,7 +180,7 @@ final class BadgesService implements HasHooks
          *
          * @param list<array<string, string>> $items     Renderable badge rows.
          * @param array<string, mixed>        $settings Trust settings.
-         * @param string                        $placement `product` or `shortcode`.
+         * @param string                        $placement `product`, `checkout` or `shortcode`.
          */
         do_action('trust/badges_rendered', $items, $settings, $placement);
     }
@@ -155,7 +188,9 @@ final class BadgesService implements HasHooks
     /**
      * Build the ordered list of renderable badge items from the settings.
      *
-     * Each item is: ['slug' => string, 'svg' => string, 'label' => string].
+     * Each item is: ['slug' => string, 'svg' => string, 'label' => string,
+     * 'caption' => string]. `label` is the admin picker text; `caption` is what
+     * shoppers see and hear.
      *
      * @param array<string, mixed> $settings
      * @return list<array<string, string>>
@@ -174,14 +209,29 @@ final class BadgesService implements HasHooks
             }
 
             $items[] = [
-                'slug'  => $slug,
-                'svg'   => BadgeLibrary::svg($slug),
-                'label' => BadgeLibrary::label($slug),
+                'slug'    => $slug,
+                'svg'     => BadgeLibrary::svg($slug),
+                'label'   => BadgeLibrary::label($slug),
+                'caption' => BadgeLibrary::caption($slug),
             ];
         }
 
         /** @var list<array<string, string>> $items */
-        return apply_filters('trust/badges', $items, $settings);
+        $items = apply_filters('trust/badges', $items, $settings);
+
+        // Items added by a filter may carry only a label. A library badge gets
+        // its shopper caption, so the admin picker text never reaches the
+        // storefront; anything else keeps the label it came with.
+        foreach ($items as $i => $item) {
+            if (! isset($item['caption'])) {
+                $slug                 = (string) ($item['slug'] ?? '');
+                $items[$i]['caption'] = BadgeLibrary::has($slug)
+                    ? BadgeLibrary::caption($slug)
+                    : (string) ($item['label'] ?? '');
+            }
+        }
+
+        return $items;
     }
 
     /**

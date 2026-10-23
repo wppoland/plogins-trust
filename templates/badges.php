@@ -9,8 +9,9 @@
  *
  * @package Trust
  *
- * @var string                      $heading Heading text (may be empty).
- * @var list<array<string, string>> $items   Renderable badge items.
+ * @var string                      $heading  Heading text (may be empty).
+ * @var list<array<string, string>> $items    Renderable badge items.
+ * @var bool                        $captions Print the caption under each icon.
  */
 
 declare(strict_types=1);
@@ -30,10 +31,20 @@ if (empty($items) || ! is_array($items)) {
 
     <ul class="trust-badges__list" role="list">
         <?php foreach ($items as $item) : ?>
-            <?php $label = (string) ($item['label'] ?? ''); ?>
+            <?php
+            // The shopper caption, never the admin picker text ("... (lock)").
+            $caption = (string) ($item['caption'] ?? $item['label'] ?? '');
+            // A visible caption is the accessible name, so the icon is hidden
+            // from screen readers rather than announced twice.
+            $showCaption = ! empty($captions) && $caption !== '';
+            ?>
             <li class="trust-badge trust-badge--svg" data-trust-badge="<?php echo esc_attr((string) ($item['slug'] ?? '')); ?>">
                 <?php if (! empty($item['svg'])) : ?>
-                    <span class="trust-badge__icon" role="img" aria-label="<?php echo esc_attr($label); ?>">
+                    <?php if ($showCaption) : ?>
+                    <span class="trust-badge__icon" aria-hidden="true">
+                    <?php else : ?>
+                    <span class="trust-badge__icon" role="img" aria-label="<?php echo esc_attr($caption); ?>">
+                    <?php endif; ?>
                         <?php
                         /*
                          * Trusted, hand-authored markup from BadgeLibrary (never
@@ -89,6 +100,9 @@ if (empty($items) || ! is_array($items)) {
                         );
                         ?>
                     </span>
+                <?php endif; ?>
+                <?php if ($showCaption) : ?>
+                    <span class="trust-badge__label"><?php echo esc_html($caption); ?></span>
                 <?php endif; ?>
             </li>
         <?php endforeach; ?>
